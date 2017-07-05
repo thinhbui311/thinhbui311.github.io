@@ -11,89 +11,93 @@
 				font-family: 'Yanone Kaffeesatz', sans-serif;
 				font-size: 26px;
 			}
-			.container{
-				width: 1300px;
-				margin:auto;
-				
-			}
-
-			.topbar{
-				max-width: 100%;
-			
-			}
-
 			p#tit{
 				display:inline;
 				font-family: 'Michroma', sans-serif;
-				font-size: 54px;
-
+				font-size: 56px;
 			}
 			
 			p#subtit{
 				display:inline;
 				font-family: 'Viga', sans-serif;
-				font-size: 20px;
+				font-size: 22px;
 			}
+
+			#container{
+				max-width: 1300px;
+				margin:auto;
+			}
+
+			.topbar{
+				width: 100%;
+				margin:auto;
+			}
+			#banner{	
+				box-sizing: border-box;
+				padding: 0px;
+				font-family: 'Dancing Script', cursive;
+				font-size: 72px;	
+			}
+
 			.main{
 				box-sizing: border-box;
 				position: relative;
-				margin:auto;
 				width: 100%;
-					
 			}
 
 			#menu{
 				box-sizing: border-box;
 				position: absolute;
-				top:80px;
-				padding:10px;
-				margin:0;
-				width: 20%;
-				font-family: 'Yanone Kaffeesatz', sans-serif;
-				font-size: 30px;
+				top:92px;
+				width: 15%;
 				float:left;
+				font-family: 'Yanone Kaffeesatz', sans-serif;
+				font-size: 34px;
+			}
+
+			#content{
+				box-sizing: border-box;
+				position: absolute;
+				left: 15%;
+				top:50px;
+				padding: 0;
+				margin:0;
+				width: 85%;
+
 			}
 
 			.submenu{
-				box-sizing: border-box;
-				padding:5px;
-				width: 100%;
+				padding: 5px;
 			}
 
 			.submenu:hover{
 				background-color: black;
 				color: white;
 				cursor: context-menu;
+				ox-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 			}
 
-			#content{
-				box-sizing: border-box;	
-				position: absolute;
-				top:50px;
-				left: 20%;
-				margin:0;
-				width: 80%;
-				float:left;
-			}
-			.subcontent{
-				box-sizing: border-box;
-				width: 100%;
-			}
 			p.name{
+				box-sizing: border-box;
 				font-family: 'Yanone Kaffeesatz', sans-serif;
 				font-size: 50px;
+				padding: 0;
 				color: #19aa9c;
+				cursor: context-menu;
+			}
+
+			p.name:hover{
+				color: #1070a0;
 			}
 			#backtotop{
 				position: fixed;
 				bottom: 5px;
 				right: 5px;
-
 			}
 		</style>
 	</head>
 	<body>
-		<div class="container">
+		<div id="container">
 			<div class="topbar">
 					<p id="tit">TechAndLife</p>
 					<p id="subtit">Magazine</p>
