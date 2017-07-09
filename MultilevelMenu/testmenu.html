@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		#test {
+			position: relative;
+			margin: 0;
+			padding:0;
+		}
+
+		#test ul {
+			position: absolute;
+		}
+
+		#test ul li {
+			position: relative;
+			margin:5px;
+			padding:5px;
+		}
+		#test ul ul{
+			display:none;
+			position: absolute; 
+		    font-size: 30px;   
+		}
+		
+		#test > ul > li:hover + ul {
+			display: block;
+			cursor: context-menu;
+		}
+
+	</style>
+</head>
+<body>
+<div id="test">
+		<ul>
+			<li class="hov">Trang chủ</li>
+				<ul>
+					<li><a>Salad Tôm</a></li>
+					<li><a>Gỏi xoài Chiềng Mai</a></li>
+					<li><a>Súp kem bắp ngô gà</a></li>
+					<li><a>Súp kem bí đỏ</a></li>
+					<li><a>Súp hải sản nấm tươi</a></li>
+				</ul>
+			<li class="hov">Món khai vị</li>
+				<ul>
+					<li><a>Salad Tôm</a></li>
+					<li><a>Gỏi xoài Chiềng Mai</a></li>
+					<li><a>Súp kem bắp ngô gà</a></li>
+					<li><a>Súp kem bí đỏ</a></li>
+					<li><a>Súp hải sản nấm tươi</a></li>
+				</ul>
+		</ul>
+</div>
+</body>
+</html>

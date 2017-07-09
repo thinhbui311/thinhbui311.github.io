@@ -1,0 +1,53 @@
+		<style>
+			@import url('https://fonts.googleapis.com/css?family=Tangerine');
+			@import url('https://fonts.googleapis.com/css?family=Arima+Madurai:100');
+			@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+			@import url('https://fonts.googleapis.com/css?family=Sigmar+One');
+			#main {
+				box-sizing: border-box;
+				padding: 0;
+				margin: 0;
+				position: relative;
+			}
+
+			#content {
+				box-sizing: border-box;
+				padding-top:30px;
+				margin: auto;
+				width: 100%;
+			}
+
+			#content .pic {
+				float: left;
+				box-sizing: border-box;
+				margin: 0;
+				padding:0;
+				width: 33.3333%;	
+			}
+
+			.pic > img {
+				box-sizing: border-box;
+				padding: 0;
+				margin: auto;
+				padding: 20px;
+			}
+
+			.pic > p {
+				box-sizing: border-box;
+				padding: 0 0 20 0;
+				margin: 0;
+				text-align: center;
+				font-family: 'Open Sans Condensed', sans-serif;
+				font-size: 28px;
+			
+			}
+
+			a {
+				text-decoration: none;
+				color: inherit;
+			}
+
+			a:hover{
+				color: #1a787e;
+			}
+		</style>
