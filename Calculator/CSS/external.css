@@ -1,0 +1,110 @@
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200');
+	#external{
+		box-sizing: border-box;
+		padding:0;
+		margin: 0;
+		height: 500px;
+		width: 250px;
+		display: inline-block;
+		float: left;
+		position: relative;
+	}
+	
+	#excontent{
+		box-sizing: border-box;
+		padding: 0;
+		margin:126px 0 0 0;
+		position: absolute;
+		left:-100px;
+		z-index: 0;
+		width: 200px;
+		height: 74.8%;
+		float: left;
+		border: 1.4px black solid;
+		border-left: none;
+		box-shadow: 0px 7px 30px 0px rgba(50, 50, 50, 0.56);
+
+	}
+
+	#exbt{
+		box-sizing: border-box;
+		padding: 0;
+		margin:126px 0 0 200px;
+		position: absolute;
+		left: -100px;
+		width: 40px;
+		height: 74.8%;
+		float: left;
+	}
+
+	.exbton{
+		box-sizing: border-box;
+		padding:0;
+		margin:0;
+		position: relative;
+
+		height: 60px;
+		width: 40px;
+		border-top-right-radius: 7px;
+		border-bottom-right-radius: 7px;
+		background-color: #c8d4da;
+		box-shadow:   6px 1px 30px 0px rgba(50, 50, 50, 0.19);
+		background-color: #21a9c4;
+		border-style: none;
+		font-size: 33px;
+		outline:none;
+		border: 1.2px black solid;
+		border-left: none;
+
+	}
+
+	#spa1 {
+		position: absolute;
+		display: inline-block;
+		top:10px;
+		left:10px;
+		transition: all 0.5s;
+		
+	}
+
+	#spa2 {
+		position: absolute;
+		display: inline-block;
+		top: 10px;
+		left: 13px;
+		content: '\00ab';
+		opacity: 0;
+		transition: all 0.5s;
+	
+	}
+
+	.exbton:hover #spa2{
+		
+		left: 10px;
+		opacity: 1;
+	}
+
+	.exbton:hover #spa1{
+		left: -8px;
+		opacity: 0;
+		
+	}
+
+	#excontent button{
+		box-sizing: border-box;
+		padding:0;
+		margin: 0;
+		width: 50%;
+		height: 20%;
+		float: left;
+		border-style: none;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 22px;
+		background-color: #2aa7a3;
+	}
+
+	#excontent button:hover{
+		background-color:#2b8885;
+	}
+</style>

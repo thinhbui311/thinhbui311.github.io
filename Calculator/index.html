@@ -3,16 +3,20 @@
 	<head>
 		<title>MyCalculator</title>
 		<link rel="stylesheet" type="text/css" href="CSS/cal.css">
+		<link rel="stylesheet" type="text/css" href="CSS/external.css">
 		
 		<style></style>
 	</head>
 	<body>
 		<div id="container">
+		<div id="subcontain">
 			<div id="main">
 				<p id="show"></p>
 				<input type="text" id="display">
 
 				<button class="doubleso" id="ac" type="button"  onclick = "xoa()">AC</button>
+
+				<button class="chucnang" type="button" value="-" onclick = "negative()" ><sup>+</sup>/-</sub></button>
 
 				<button class="chucnang" type="button" value="*0.01" onclick = "operator(this)" >%</button>
 
@@ -32,7 +36,7 @@
 
 				<button class="so" type="button" value="4" onclick="num(this)">4</button>
 
-				<button class="chucnang" type="button" value="-" onclick = "operator(this)" >-</button>
+				<button class="chucnang" type="button" value="-" onclick = "operator(this)" >&minus;</button>
 
 				<button class="so" type="button" value="3" onclick="num(this)">3</button>
 
@@ -48,30 +52,36 @@
 
 				<button class="so" id="bang" type="button" value="=" onclick = "bang()">=</button>
 
-<!--Phím chức năng -->
-				
+			</div>
+			<div id="external">
+				<div id="excontent">
+					<button type="button" value="Math.PI" onclick="operator(this)">&#x03C0;</button>
 
-				
+					<button type="button" value="2" onclick="mu(this)">x<sup>2</sup></button>
 
-				
+					<button type="button" value="Math.sin(" onclick="luonggiac(this)">Sin(x)</button>
 
-				
+					<button type="button" value="3" onclick="mu(this)">x<sup>3</sup></button>
 
-				
+					<button type="button" value="Math.cos(" onclick="luonggiac(this)">Cos(x)</button>
 
-<!-- Phím tính toán nâng cao -->
-				
+					<button type="button" onclick="can2(this)">&radic;</button>
 
+					<button type="button" value="Math.tan(" onclick="luonggiac(this)">Tan(x)</button>
+					
+					<button type="button" onclick="can3(this)">&#x221B;</button>
 
+					<button type="button" value="1/Math.tan(" onclick="luonggiac(this)">Cot(x)</button>
 
-
-<!-- Bằng và clear -->
-				
-
-				
-
+					<button type="button" onclick="giaithua()">!</button>
+				</div>
+				<div id="exbt">
+					<button class="exbton" type="button" onclick="mini()"><span id="spa1">&#x00bb;</span><span id="spa2">&#x00ab;</span></button>
+				</div>
 			</div>
 		</div>
+		</div>
 		<script src = "JS/cal.js"></script>
+		<script src = "JS/external.js"></script>
 	</body>
 </html>
