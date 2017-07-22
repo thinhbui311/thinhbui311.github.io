@@ -69,7 +69,7 @@ var question9 = new quest (
 	);
 
 var question10 = new quest (
-	"Which logo on a flag identifies a ship's crew as pirates?",
+	"what is the name of mickey mouse girlfriend?",
 	"A . Mary Mouse",
 	"B . Minnie Mouse",
 	"C . Maude Mouse"
