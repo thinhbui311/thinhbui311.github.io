@@ -15,7 +15,7 @@ $(function(){
 		if(current == null){
 			setTimeout(function(){
 			$('.card').css('pointer-events', 'auto');
-			},350);
+			},250);
 		} else {
 			setTimeout(function(){
 			$('.card').css('pointer-events', 'auto');
