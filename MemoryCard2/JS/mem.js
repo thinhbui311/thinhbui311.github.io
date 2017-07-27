@@ -19,7 +19,7 @@ $(function(){
 		} else {
 			setTimeout(function(){
 			$('.card').css('pointer-events', 'auto');
-			},950);
+			},900);
 		}
 		
 		
@@ -41,7 +41,7 @@ $(function(){
 					currentfrontIndex = null;
 					currentbackIndex = null;
 					index = 0;
-					},600)
+					},400)
 				
 			} else {
 				console.log("khac nhau");
@@ -54,7 +54,7 @@ $(function(){
 					current = null;
 					currentfrontIndex = null;
 					currentbackIndex = null;
-				}, 650)
+				}, 600)
 				
 			}	
 		}
