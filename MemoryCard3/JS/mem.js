@@ -1,8 +1,10 @@
 $(function(){	
 /// Hàm tạo bộ đếm countdown ///
+	$('.card').css('pointer-events', 'none');
 	var start = 50;
 	var count;
 	$("#start-button").click(function(){
+		$('.card').css('pointer-events', 'auto');
 		$("#start-box").addClass("slide-up");
 		$("#display").html(start);
 		var count = setInterval(function(){
