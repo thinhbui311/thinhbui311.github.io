@@ -1,0 +1,57 @@
+#victory-box{
+	width: 30%;
+	height: 200px;
+	position:absolute;
+	top:100px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	padding:0;
+	border-radius: 13px;
+	background-color: white;
+	z-index: 2;
+	display: none;
+	animation-name: slidedown;
+	animation-duration: 0.5s;
+	cursor: context-menu;
+	user-select:none;
+	box-shadow: -6px 5px 17px 0px rgba(50, 50, 50, 0.63);
+}
+
+#victory-content{
+	margin: 0;
+	padding:0;
+	width: 100%;
+	height: 60%;
+	font-family: 'Passion One', cursive;
+	font-size: 50px;
+	text-align: center;
+	background-color: #e8f443;
+	color: white;
+}
+
+#victory-content > p {
+	padding-top: 10px;
+	margin-top: 20px;
+}
+
+#victory-button{
+	margin: 0;
+	padding:0;
+	width: 100%;
+	height: 30%;
+	font-family: 'Passion One', cursive;
+	font-size: 20px;
+	text-align: center;
+	border-bottom-right-radius: 13px;
+	border-bottom-left-radius: 13px;
+}
+
+#victory-button > p{
+	padding-top: 17px;
+	margin: 0;
+}
+#victory-button:hover{
+	background-color: #f8fcc5;
+}

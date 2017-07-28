@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MemoryGameCard</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="CSS/mem.css">
+		<link rel="stylesheet" type="text/css" href="CSS/popup-box.css">
+		<link rel="stylesheet" type="text/css" href="CSS/start-box.css">
+		<link rel="stylesheet" type="text/css" href="CSS/victory-box.css">
+		<style>
+			@import url('https://fonts.googleapis.com/css?family=Orbitron');
+			@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+			@import url('https://fonts.googleapis.com/css?family=Passion+One');
+		</style>
+	</head>
+	<body>
+		<audio id="right">
+			<source  src="Audio/Thats right.wav" type="audio/wav">
+		</audio>
+		<audio id="fail">
+			<source  src="Audio/What Happened.wav" type="audio/wav">
+		</audio>
+		<audio id= "click">
+			<source src="Audio/click.mp3" type="audio/mp3">
+		</audio>
+
+		<!-- Start box -->
+		<div id="start-box">
+			<div id= "start-content">
+				<p>Are you ready?</p>
+			</div>
+			<div id="start-button">
+				<p>START!</p>
+			</div>
+		</div>
+		<!-- Hết start box -->
+
+		<!-- Popup Box -->
+		<div id ="popup-box">
+			<div id="content">
+				<p>Time Out! You Lose !</p>
+				<p>Do you want to play again?</p>
+			</div>
+			<div id= "select">
+				<div id="ok"><p>OK</p></div>
+				<div id="cancel"><p>Cancel</p></div>
+			</div>
+		</div>
+		<!-- Hết Popup box -->
+
+		<!-- Victory box -->
+		<div id="victory-box">
+			<div id="victory-content">
+				<p>Congratulation! You're win.</p>
+			</div>
+			<div id ="victory-button">
+				<p>Play again?</p>
+			</div>
+		</div>
+		<!-- Hết Victor-box -->
+
+		<!-- Chương trình chính -->
+		<img src="Image/473213.jpg" width="100%">
+		<div id="blur"></div>
+		<div id="container">
+			<div id= "timer">
+				<div id="countdown">
+					<div id="logo">
+						<img src="Image/timer.png" width="100%">
+						<div id="opa">
+						</div>
+						<div id="hour">
+							<p id="display"></p>
+						</div>
+					</div>
+				</div>
+				<div id="progressbar">
+					
+				</div>
+			</div>
+			<div class= "card">
+				<img class="front" src="Image/1.jpg" width="100%">
+				<img class="back" src="Image/altback.jpg" width="100%">
+			</div>
+
+			<div class= "card">
+				<img class="front" src="Image/2.jpg" width="100%">
+				<img class="back" src="Image/altback.jpg" width="100%">
+			</div>
+
+			<div class = "card">
+				<img class="front" src="Image/3.jpg" width="100%">
+				<img class="back" src="Image/altback.jpg" width="100%">
+			</div>
+
+			<div class = "card">
+				<img class="front" src="Image/4.jpg" width="100%">
+				<img class="back" src="Image/altback.jpg" width="100%">
+			</div>
+
+			<div class = "card">
+				<img class="front" src="Image/5.jpg" width="100%">
+				<img class="back" src="Image/altback.jpg" width="100%">
+			</div>
+
+			<div class = "card">
+				<img class="front" src="Image/8.jpg" width="100%">
+				<img class="back" src="Image/altback.jpg" width="100%">
+			</div>
+
+			<div class = "card">
+				<img class="front" src="Image/1.jpg" width="100%">
+				<img class="back" src="Image/altback.jpg" width="100%">
+			</div>
+
+			<div class = "card">
+				<img class="front" src="Image/2.jpg" width="100%">
+				<img class="back" src="Image/altback.jpg" width="100%">
+			</div>
+
+			<div class = "card">
+				<img class="front" src="Image/3.jpg" width="100%">
+				<img class="back" src="Image/altback.jpg" width="100%">
+			</div>
+
+			<div class = "card">
+				<img class="front" src="Image/4.jpg" width="100%">
+				<img class="back" src="Image/altback.jpg" width="100%">
+			</div>
+
+			<div class = "card">
+				<img class="front" src="Image/5.jpg" width="100%">
+				<img class="back" src="Image/altback.jpg" width="100%">
+			</div>
+
+			<div class = "card">
+				<img class="front" src="Image/8.jpg" width="100%">
+				<img class="back" src="Image/altback.jpg" width="100%">
+			</div>
+
+			<div class = "card">
+				<img class="front" src="Image/7.jpg" width="100%">
+				<img class="back" src="Image/altback.jpg" width="100%">
+			</div>
+
+			<div class = "card">
+				<img class="front" src="Image/7.jpg" width="100%">
+				<img class="back" src="Image/altback.jpg" width="100%">
+			</div>	
+
+			<div class = "card">
+				<img class="front" src="Image/9.jpg" width="100%">
+				<img class="back" src="Image/altback.jpg" width="100%">
+			</div>
+
+			<div class = "card">
+				<img class="front" src="Image/9.jpg" width="100%">
+				<img class="back" src="Image/altback.jpg" width="100%">
+			</div>	
+		</div>
+		<script src="JS/jquery-3.2.1.min.js"></script>
+		<script src="JS/mem.js"></script>
+	</body>
+</html>
