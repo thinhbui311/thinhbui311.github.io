@@ -9,6 +9,7 @@ $(function(){
 		$("#display").html(start);
 		if(start == 0 && score != 8){
 			clearInterval(count);
+			document.getElementById("lose").play();
 			$("#popup-box").css("display", "block");
 			$('.card').css('pointer-events', 'none');
 		}
@@ -77,6 +78,7 @@ $(function(){
 					currentbackIndex = null;
 					index = 0;
 					if(score == 8){
+						document.getElementById("win").play();
 						$("#victory-box").css("display", "block");
 					};
 					},400);	
