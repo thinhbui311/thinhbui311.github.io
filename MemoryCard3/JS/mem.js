@@ -11,9 +11,9 @@ $(function(){
 		$("#display").html(start);
 		if(start == 0 && score != 8){
 			clearInterval(count);
+			$('.card').css('pointer-events', 'none');
 			document.getElementById("lose").play();
 			$("#popup-box").css("display", "block");
-			$('.card').css('pointer-events', 'none');
 		}
 		if(score == 8){
 			clearInterval(count);
