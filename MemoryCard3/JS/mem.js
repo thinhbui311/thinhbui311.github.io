@@ -1,7 +1,7 @@
 $(function(){	
 /// Hàm tạo bộ đếm countdown ///
 	$('.card').css('pointer-events', 'none');
-	var start = 5;
+	var start = 50;
 	var count;
 	$("#start-button").click(function(){
 		$('.card').css('pointer-events', 'auto');
