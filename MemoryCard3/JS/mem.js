@@ -1,24 +1,27 @@
 $(function(){	
 /// Hàm tạo bộ đếm countdown ///
 	$('.card').css('pointer-events', 'none');
-	var start = 50;
+	var start = 5;
 	var count;
 	$("#start-button").click(function(){
 		$('.card').css('pointer-events', 'auto');
 		$("#start-box").addClass("slide-up");
 		$("#display").html(start);
 		var count = setInterval(function(){
-		$("#display").html(start);
-		if(start == 0 && score != 8){
-			clearInterval(count);
-			$('.card').css('pointer-events', 'none');
-			document.getElementById("lose").play();
-			$("#popup-box").css("display", "block");
-		}
-		if(score == 8){
-			clearInterval(count);
-		}
-		start -= 1;
+			if(start == 0){
+				$('.card').css('pointer-events', 'none');
+			}
+			$("#display").html(start);
+			if(start == 0 && score != 8){
+				clearInterval(count);
+				$('.card').css('pointer-events', 'none');
+				document.getElementById("lose").play();
+				$("#popup-box").css("display", "block");
+			}
+			if(score == 8){
+				clearInterval(count);
+			}
+			start -= 1;
 		},1000);
 	});
 	
@@ -52,11 +55,19 @@ $(function(){
 		$($(".back")[index]).addClass("rotate180");
 		if(current == null){
 			setTimeout(function(){
-			$('.card').css('pointer-events', 'auto');
+			if(start < 1) {
+					$('.card').css('pointer-events', 'none');
+				} else {
+					$('.card').css('pointer-events', 'auto');
+				}
 			},200);
 		} else {
 			setTimeout(function(){
-			$('.card').css('pointer-events', 'auto');
+				if(start < 1) {
+					$('.card').css('pointer-events', 'none');
+				} else {
+					$('.card').css('pointer-events', 'auto');
+				}
 			},800);
 		}
 		
