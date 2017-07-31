@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Delicious.com</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="CSS/topbar.css">
+		<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="CSS/bottom.css">
+		<style type="text/css">
+			@import url('https://fonts.googleapis.com/css?family=Tangerine');
+			@import url('https://fonts.googleapis.com/css?family=Arima+Madurai:100');
+			@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+			@import url('https://fonts.googleapis.com/css?family=Sigmar+One');
+			@import url('https://fonts.googleapis.com/css?family=Andika');
+			#topbar{
+				box-sizing: border-box;
+				padding: 0;
+				margin: 0;
+				position: fixed;
+				top:0;
+				width: 100%;
+				height: 80px;
+				opacity: 0.1;
+				background-color: white;
+			}
+			#title {
+				box-sizing: border-box;
+				display: inline-block;
+				position: fixed;
+				top:0;
+				height: 80px;
+				width: 15%;
+				padding-top: 15px;
+				margin: 0;
+				font-family: 'Tangerine', cursive;
+				color:white;
+				font-size: 60px;
+				text-align: center;
+			}
+
+			#menu {
+				box-sizing: border-box;
+				padding: 0;
+				margin: 0;
+				position: fixed;
+				top:0;
+				right: 0;
+				width: 75%;
+				height: 80px;
+				
+			}
+
+			
+
+			#menu > ul {
+				box-sizing: border-box;
+				width: 100%;
+				height: 100%;
+				padding: 0;
+				margin: 0;
+
+			}
+			#menu > ul > li {
+				position: relative;
+				display: inline-block;
+				float: left;
+				box-sizing: border-box;
+				padding: 0;
+				margin: 0;
+				width: 14.2857143%;
+				height: 100%;
+				text-align: center;
+				padding-top: 23px;
+				font-family: 'Andika', sans-serif;
+				font-size: 24px;
+				font-weight: lighter;
+				color: white;
+			}
+
+			#menu > ul > li > ul {
+				display: none;
+				box-sizing: border-box;
+				width: 100%;
+				padding:0;
+				position: absolute;
+				top:80px;
+				transition: display 0.5s linear;
+				font-size: 25px;
+			}
+
+			#menu > ul > li:hover {
+				color: white;
+				background-color: #05161e;
+				opacity: 0.9;
+
+			}
+			#menu > ul > li:hover > ul {
+				display: block;
+
+			}
+
+			#menu > ul > li > ul li:hover{
+				color: white;
+				background-color:black;
+				opacity: 0.8;
+			}
+
+			#first {
+				position: absolute;
+				box-sizing: border-box;
+				padding: 0;
+				margin: 0;
+				top: 230px;
+				left: 55px;
+				width: 30%;
+				color: white;
+				font-family: 'Arima Madurai', cursive;
+				font-size: 20px;
+				text-align: justify;
+			}
+
+			#discount {
+				box-sizing: border-box;
+				width: 100%;
+				padding:0;
+				margin: 0;
+				position: relative;
+				top:-4px;
+				height: 200px;
+				background-color: #789377;
+				color: white;
+				opacity: 0.5;
+			}
+
+			#discount > p {
+				box-sizing: border-box;
+				padding: 0;
+				margin: auto;
+				width: 60%;
+				text-align: center;
+				font-family: 'Sigmar One', cursive;
+				font-size: 40px;
+			}
+
+			#discount > p:hover {
+				cursor: context-menu;
+			}
+
+			.pic {
+				box-sizing: border-box;
+				width: 100%;
+				position: relative;
+				top: -4px;
+			}
+			#pic1 {
+				box-sizing: border-box;
+				padding: 2px;
+				margin: 0;
+				position: relative;
+				float: left;
+			}
+			#pic2 {
+				box-sizing: border-box;
+				padding:2px;
+				margin: 0;
+				float: left;
+			}
+
+			#pic3 {
+				box-sizing: border-box;
+				padding:2px;
+				margin: 0;
+				position:relative;
+				float:left;
+
+			}
+
+			#blog {
+				box-sizing: border-box;
+				padding: 0;
+				margin: 0;
+				width: 100%;
+				position: relative;
+				height: 250px;
+				clear: left;
+			}
+
+			#second {
+				box-sizing: border-box;
+				padding-top: 10px;
+				margin:auto;
+				width: 60%;
+				text-align: center;
+				font-family: 'Tangerine', cursive;
+				font-size: 40px;
+				clear: left;
+				position: relative;
+			}
+
+		
+		</style>
+	</head>
+
+	<body>
+	<div class="container">
+		<div class="top">
+			<div id="banner">
+				<img src="Image/1.jpeg" width="100%">
+				<p id="title">Delicious.com</p>
+				<div id="topbar"></div>	
+				<div id="menu">
+					<ul>
+						<li><a href="index.html"> Trang chủ</a></li>
+						<li><a href="Món khai vị.html">Món khai vị</a>
+							<ul class="submenu">
+								<li><a href="Món khai vị/Salad Tôm.html">Salad Tôm</a></li>
+								<li><a href="Món khai vị/Gỏi xoài Chiềng Mai.html">Gỏi xoài Chiềng Mai</a></li>
+								<li><a href="Món khai vị/Súp kem bắp ngô gà.html">Súp kem bắp ngô gà</a></li>
+								<li><a href="Món khai vị/Súp kem bí đỏ.html">Súp kem bí đỏ</a></li>
+								<li><a href="Món khai vị/Súp hải sản nấm tươi.html">Súp hải sản nấm tươi</a></li>
+								<li><a href="Món khai vị/Sashimi tổng hợp.html">Sashimi tổng hợp</a></li>
+							</ul>
+						</li>
+						<li><a href="Món chính.html">Món chính</a>
+							<ul class="submenu">
+								<li><a href="Món chính/Món Âu.html">Món Âu</a></li>
+								<li><a href="Món chính/Món Thái.html">Món Thái</a></li>
+								<li><a href="Món chính/Món HongKong.html">Món HongKong</a></li>
+								<li><a href="Món chính/Món Nhật.html">Món Nhật</a></li>
+								<li><a href="Món chính/Món Việt.html">Món Việt</a></li>
+								<li><a href="Món chính/Nước khác.html">Nước khác</a></li>
+							</ul>
+						</li>
+						<li><a href="Tráng miệng.html">Tráng miệng</a>
+							<ul class="submenu">
+								<li><a href="Tráng miệng/Xôi mít.html">Xôi mít</a></li>
+								<li><a href="Tráng miệng/Xôi xoài Thái.html">Xôi xoài Thái</a></li>
+								<li><a href="Tráng miệng/Tiramisu.html">Tiramisu</a></li>
+								<li><a href="Tráng miệng/Chanh leo.html">Chanh leo</a></li>
+								<li><a href="Tráng miệng/Cốm xoài.html">Cốm xoài</a></li>
+								<li><a href="Tráng miệng/Opera Cake.html">Opera Cake</a></li>	
+							</ul>
+						</li>
+						<li><a href="Đồ ăn kèm.html">Đồ ăn kèm</a></li>
+						<li><a href="Cửa hàng.html">Cửa hàng</a></li>
+						<li><a href="Về chúng tôi.html">Về chúng tôi</a></li>
+					</ul>
+				</div>
+				<div id="first">
+					<p>Give me ALL the pizza toasts! Was there any after-school snack that was better than pizza toast? Wait, don’t answer that because asking me to choose between after-school snacks is just too cruel – they’re all so good. But, pizza toast holds a special spot in my heart because it was one of my small repertoire of recipes that I could make on my own, at seven years old. Other recipes included: regular toast, butter and sugar toast, instant noodles, and scrambled eggs.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="main">
+			<div id="discount">
+				<p>tastecard gives 50% off the food bill or 2 for 1 across all courses at top UK restaurants.</p>
+			</div>
+			<div class="pic">
+				<img src="Image/6.jpeg" width="60%" id="pic1">
+				<img src="Image/3.jpeg" width="40%" id="pic2">
+				<img src="Image/2.jpeg" width="40%" id="pic3">
+			</div>
+			<div id="blog">
+				<p id="second">
+					Enjoy a complimentary carafe of wine when you order from our special set menus this summer. That’s two courses from £19 or three courses from £23 at participating Gordon Ramsay Restaurants in London.
+ 
+					Discover signature dishes, sumptuous seasonal produce and best-of-British steaks, all carefully curated into stunning set menus. Whether you order two courses or three, you’ll receive a carafe of sommelier-selected white, red or rosé gratis.
+					 
+				</p>
+			</div>
+			<div id="pic4">
+				<img src="Image/8.jpeg" width="100%">
+			</div>
+		</div>
+
+		<div class="bottom">
+			<div  id="logo">
+				<p>Delicious.com</p>
+				<div id="icon">
+					<div class="icon-lg">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+					</div>
+					<div class="icon-lg">
+						<i class="fa fa-google-plus" aria-hidden="true"></i>
+					</div>
+					<div class="icon-lg">
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+					</div>	
+					<div class="icon-lg">
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+					</div>
+				</div>
+			</div>
+			<div id="contact">
+				<div id="address">
+					<p><i class="fa fa-map-marker" aria-hidden="true"></i> Danh sách cửa hàng</p>
+					<p class="sub-add"><i class="fa fa-cutlery" aria-hidden="true"></i>  260 Đội Cấn, Ba Đình, Hà Nội</p>
+					<p class="sub-add"><i class="fa fa-cutlery" aria-hidden="true"></i>  1A Thụy Khuê, Tây Hồ, Hà Nội</p>
+					<p class="sub-add"><i class="fa fa-cutlery" aria-hidden="true"></i>  30 Bà Triệu, Hoàn Kiếm, Hà Nội</p>
+				</div>
+				<div id="hotline">
+					<p><i class="fa fa-phone" aria-hidden="true"></i> Số điện thoại liên hệ</p>
+					<p lass="sub-add"><i class="fa fa-mobile" aria-hidden="true"></i> 0921123999</p>
+					<p lass="sub-add"><i class="fa fa-mobile" aria-hidden="true"></i> 0286246789</p>
+					<p lass="sub-add"><i class="fa fa-mobile" aria-hidden="true"></i> 0924641368</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
