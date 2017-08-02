@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SignUp</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="CSS/reg.css">
+		<style>
+			@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+			@import url('https://fonts.googleapis.com/css?family=Oswald');
+		</style>
+	</head>
+	<body>
+		<div id= "container">
+			<div id="signup-Box">
+				<p>SignUp</p>
+				<form action="data.html" method="get"><br>
+					Họ tên&nbsp;<span id="spanName"></span><br><input id="name" type="text" name="Username"><br>
+					Ngày sinh&nbsp;<span id="spanBirth"></span><br><input id="birth" type="date" name="Date"<br>
+					Giới tính&nbsp;<span id="spanSex"></span><br><select id="Sex" name="sex"><br>
+						<option></option>
+						<option value="Nam">Nam</option>
+						<option value="Nữ">Nữ</option>
+					</select><br>
+					Địa chỉ&nbsp;<span id="spanAdd"></span><br><input id="add" type="text" name="Address"><br>
+					Điện thoại&nbsp;<span id="spanTel"></span><br><input id="tel" type="text" name="Phone"><br>
+					Email&nbsp;<span id="spanMail"></span><br><input id="mail" type="text" name="Email"><br>
+					Facebook&nbsp;<span id="spanFace"></span><br><input id="face" type="text" name="Facebook"><br>
+					Mật khẩu&nbsp;<span id="spanPass"></span><br><input id="pass" type="password" name="Password"><br>
+					<input id="sub" type="submit" value="Sign Up">
+				</form>
+			</div>
+		</div>
+		<script src="JS/jquery-3.2.1.min.js"></script>
+		<script src="JS/reg.js"></script>
+	</body>
+</html>
