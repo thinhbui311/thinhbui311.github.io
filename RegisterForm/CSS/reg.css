@@ -19,7 +19,7 @@ body{
 
 #signup-Box{
 	width: 400px;
-	height: 700px;
+	height: 600px;
 	position: relative;
 	top:30px;
 	margin: auto;
@@ -48,7 +48,7 @@ body{
 	color: white;
 	font-size: 17px;
 	position: relative;
-	top:-25px;
+	top:10px;
 }
 
 input{
@@ -79,7 +79,7 @@ select{
 input#sub{
 	position: relative;
 	left: 84px;
-	top:5px;
+	top:10px;
 	width: 40%;
 	background-color: #1a7440;
 	color: black;
