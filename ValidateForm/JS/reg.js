@@ -102,7 +102,7 @@ $(function(){
 			if($("#pass").val().match(/^(?=.*\d).{4,15}$/g)){
 				$("#spanPass").text("");
 			} else {
-				$("#spanPass").text("(4-8 ký tự, ít nhất 1 ký tự số)");
+				$("#spanPass").text("(4-15 ký tự, ít nhất 1 ký tự số)");
 				isValid = false;
 			}
 		}
