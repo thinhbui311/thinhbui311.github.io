@@ -44,18 +44,20 @@ body{
 	margin: 0 15%;
 	width: 70%;
 	height: 87%;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Oswald', sans-serif;
 	color: white;
 	font-size: 17px;
+	position: relative;
+	top:-25px;
 }
 
 input{
 	width: 100%;
 	height: 35px;
-	margin: 6px auto 15px auto;
+	margin: 2px auto 7px auto;
 	padding-left: 5px;
 	border-style: none;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Oswald', sans-serif;
 	font-weight: bolder;
 	font-size: 20px;
 	color: black;
@@ -65,16 +67,31 @@ input{
 select{
 	width: 100%;
 	height: 33px;
-	margin: 6px auto 15px auto;
+	margin: 2px auto 7px auto;
 	border-style: none;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Oswald', sans-serif;
 	font-size: 20px;
 	color: black;
 	outline: none;
-	font-weight: bolder;
+	font-weight: bold;
 }
 
-input #sub{
+input#sub{
+	position: relative;
+	left: 84px;
+	top:5px;
 	width: 40%;
-	margin:auto;
+	background-color: #1a7440;
+	color: black;
+}
+
+input#sub:hover{
+	background-color: #0c5f2f;
+	box-shadow:  -2px 4px 16px 0px rgba(50, 50, 50, 0.75);
+}
+
+form span{
+	color:black;
+	font-weight: lighter
+	font-size: 15px;
 }

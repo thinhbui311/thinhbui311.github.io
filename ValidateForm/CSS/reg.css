@@ -48,13 +48,14 @@ body{
 	color: white;
 	font-size: 17px;
 	position: relative;
-	top:-22px;
+	top:-25px;
 }
 
 input{
 	width: 100%;
 	height: 35px;
 	margin: 2px auto 7px auto;
+	padding-left: 5px;
 	border-style: none;
 	font-family: 'Oswald', sans-serif;
 	font-weight: bolder;
@@ -75,9 +76,18 @@ select{
 	font-weight: bold;
 }
 
-input #sub{
+input#sub{
+	position: relative;
+	left: 84px;
+	top:5px;
 	width: 40%;
-	margin:auto;
+	background-color: #1a7440;
+	color: black;
+}
+
+input#sub:hover{
+	background-color: #0c5f2f;
+	box-shadow:  -2px 4px 16px 0px rgba(50, 50, 50, 0.75);
 }
 
 form span{
