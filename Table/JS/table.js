@@ -1,7 +1,7 @@
 $(function(){
 	var arrData = [
 		{image : "Image/1.jpg",  name : "Biostar H110MD Pro DVI-D", code : "H110MD",    cost : "1399000", amount : "1"},
-		{image : "Image/2.jpg",  name : "Asrock H110M-DVS R2.0",    code : "H110M-DVS", cost : "1459000", amount : "2"},
+		{image : "Image/2.JPG",  name : "Asrock H110M-DVS R2.0",    code : "H110M-DVS", cost : "1459000", amount : "2"},
 		{image : "Image/3.png",  name : "MSI B250 BAZOOKA",         code : "H110MD",    cost : "2369000", amount : "4"},
 		{image : "Image/4.png",  name : "RAM Corsair Vengeance LPX 16GB (2x8GB) DDR4",  code : "Vengeance-LPX-16GB", cost : "3999000",  amount : "2"},
 		{image : "Image/5.jpg",  name : "Vga Card ASUS STRIX GTX1080 - 08G - 11GBPS",   code : "GTX1080-08G-11GBPS", cost : "20899000", amount : "7"},
