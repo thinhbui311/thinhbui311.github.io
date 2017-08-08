@@ -1,0 +1,148 @@
+*{
+	box-sizing: border-box;
+}
+
+#container{
+	width: 80%;
+	margin:auto;
+	background-color: #f5f5f5;
+	display: grid;
+	grid-template-columns:repeat(3, 1fr);
+	grid-auto-rows:500px;
+	box-shadow:  0px 1px 6px 0px rgba(50, 50, 50, 0.75);
+	grid-row-gap: 20px;
+}
+
+header{
+	grid-area:1/1/2/4;
+	display: grid;
+	grid-template-columns:repeat:1fr;
+	grid-template-rows:10%;
+	grid-auto-rows:88%;
+	grid-row-gap:2%;
+}
+
+nav{
+	grid-area:1/1/2/2;
+	display: grid;
+	grid-template-columns:repeat(3, 1fr);
+	grid-template-rows:1fr;
+	background-color: black;
+	color: white;
+}
+
+nav p{
+	grid-area:1/1/2/2;
+	margin:0;
+	font-family: 'Sigmar One', cursive;
+	font-size: 30px;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+
+}
+
+nav ul{
+	grid-area:1/2/2/4;
+	display: grid;
+	margin:0;
+	padding:0;
+	grid-template-columns:25% 25% 25% 25%;
+	grid-template-rows:1fr;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 20px;
+	font-weight: lighter;
+
+}
+
+ul li {
+	list-style-type: none;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+}
+
+li:hover{
+	background-color: white;
+	color: black;
+	transition: all 0.2s;
+	cursor: context-menu;
+}
+
+#header-content {
+	grid-area:2/1/3/2;
+	display:grid;
+	grid-template-columns:repeat(4, 1fr);
+	grid-template-rows:repeat(2, 1fr);
+	grid-column-gap:10px;
+	grid-row-gap:5px;
+	font-family: 'Sigmar One', cursive;
+
+}
+
+#header-content > div {
+	box-shadow:  0px 1px 6px 0px rgba(50, 50, 50, 0.75);
+}
+
+#header-content > div:hover{
+	opacity: 0.7;
+	transition: all 0.7s;
+}
+
+#header-content #first-header-content {
+	grid-area:1/1/3/3;
+	display: grid;
+	grid-template-columns:1fr;
+	grid-template-rows:repeat(3, 1fr);
+	font-size: 40px;
+	overflow: hidden;
+}
+
+#header-content #first-header-content > img {
+	align-items: start;
+	color: black;
+	grid-area:1/1/4/2;
+}
+
+#header-content #first-header-content > p {
+	display: grid;
+	margin:0;
+	align-content: center;
+	color: black;
+	grid-area:2/1/3/2;
+	color: white;
+	background-color: black;
+	opacity: 0.8;
+}
+
+#header-content #second-header-content {
+	grid-area:1/3/2/5;
+	overflow: hidden;
+	display: grid;
+	grid-template-columns:1fr;
+	grid-template-rows:repeat(3,1fr);
+}
+
+#second-header-content > img {
+	grid-area:1/1/4/2;
+}
+
+#second-header-content > p {
+	grid-area:1/1/2/2;
+	background-color: white;
+	color: black;
+	opacity: 0.8;
+	font-size: 20px;
+	margin:0;
+}
+
+#header-content #third-header-content {
+	grid-area:2/3/3/4;
+	overflow: hidden;
+}
+
+#header-content #fourth-header-content {
+	grid-area:2/4/3/5;
+	overflow: hidden;
+}
+
