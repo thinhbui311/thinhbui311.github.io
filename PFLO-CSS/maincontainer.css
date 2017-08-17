@@ -1,167 +1,153 @@
+*{
+	box-sizing: border-box;
+}
+
 #main-Container, header{
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	top:0;
 	left: 0;
-	display: grid;
-	grid-template-columns:1fr;
-	grid-auto-rows:120px;
-	text-decoration: none;
 }
 
-#main-Container{
-	background: linear-gradient(to right, #9772b7, #68ccd9);
-	background: -webkit-linear-gradient(to right, #9772b7, #68ccd9);
-	background: -o-linear-gradient(to right, #9772b7, #68ccd9);
-	background: -moz-linear-gradient(to right, #9772b7, #68ccd9);
+nav.navBar{
+	width: 60%;
+	height: 90px;
+	padding-top: 10px;
+	margin:auto;
 }
 
-a{
+nav.navBar .navbar-item{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin:auto;
+	padding:0;
+	float: left;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+}
+
+nav.navBar .navbar-item a{
 	color: black;
 }
 
-a:hover{
-	text-decoration: none;
-	color: white;
-	transition: all 0.5s;
-
+nav.navBar .navbar-item.item3> div{
+	width: 100%;
+    height: 80px;
 }
 
-nav{
-	grid-area:1/1/2/2;
-	display: grid;
-	grid-template-columns:repeat(6,1fr);
-	grid-template-rows:1fr 1fr 1fr;
-}
-
-nav.navbar > div{
-	display: grid;
-	align-content: center;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 22px;
-	background:rgba(133, 172, 224, 0.58);
-}
-
-nav >div:nth-child(1){
-	grid-area:1/1/3/2;
-	display: grid;
-	justify-content: end;
-}
-
-nav >div:nth-child(2){
-	grid-area:1/2/3/3;
-	display: grid;
-	justify-content: end;
-}
-
-nav >div:nth-child(3){
-	grid-area:1/3/3/5;
-	display: grid;
-	grid-template-columns:repeat(3,1fr);
-	grid-auto-rows:1fr;
-}
-
-nav > div:nth-child(3) >div{
-	grid-area:1/2/2/3;
-	display: grid;
-	justify-content: center;
-}
-
-nav > div:nth-child(3)>div>img{
+nav.navBar .navbar-item.item3>div>img{
+	height: 100%;
 	border-radius: 50%;
-	border:3px solid #6e7359;
-	box-shadow:  -3px 4px 10px 0px rgba(50, 50, 50, 0.36);
+	border:2px solid rgba(45, 79, 92, 0.87);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
-nav >div:nth-child(4){
-	grid-area:1/5/3/6;
-	display: grid;
-	justify-content: start;
-}
-
-nav >div:nth-child(5){
-	grid-area:1/6/3/7;
-	display: grid;
-	justify-content: start;
-}
-
-nav >div:nth-child(6){
-	display: none;
-}
-
-@media all and (max-width: 1200px){
-	header{
-		display: grid;
-		grid-template-columns:1fr;
-		grid-auto-rows:50px;
-
+@media all and (max-width: 1024px){
+	nav.navBar{
+		width: 90%;
+		height: 55px;
+		padding-top: 5px;
+		display: flex;
 	}
 
-	nav.navbar{
-		display: grid;
-		grid-template-columns:repeat(5,1fr);
-		grid-template-rows:50px;
+	nav.navBar .navbar-item{
+		display: flex;
+		justify-content:flex-end;
+	}
+
+	.navbar-item .material-icons{
+		font-size: 35px;
+		color:#3e2723;
+	}
+
+	nav.navBar .navbar-item.item3> div{
+		width: 100%;
+	    height: 50px;
+	}
+
+
+	.item1{
+		order:1;
+	}
+
+	.item2{
+		order:2;
+	}
+
+	.item3{
+		order: -2;
+	}
+
+	.item4{
+		order:2;
+	}
+
+	.item5{
+		order:2;
+	}
+}
+
+@media all and (max-width: 700px){
+	nav.navBar{
+		width: 100%;
+		height: 55px;
+		padding-top: 5px;
+		display: flex;
+		position: relative;
+	}
+
+	nav.navBar .navbar-item.item3{
+		width: 80px;
+		float: left;
+		margin: 0;
+		padding-left: 5px;
+	}
+
+	nav.navBar .navbar-item.item6{
+		width: 50px;
+		height: 100%;
+		display: flex;
+		position: absolute;
+		right: 5px;
+		top:0;
 		margin:0;
 	}
 
-	a{
-		font-size: 19px;
-	}
-
-	nav div:nth-child(3){
-		display: grid;
-		grid-area:1/1/2/2;
-		grid-template-columns:repeat(3,1fr);
-		grid-template-rows:1fr;
-	}
-
-	nav div:nth-child(3)>div{
-		grid-area:1/2/2/3;
-		display: grid;
-		grid-template-columns:1fr;
-		grid-template-rows:1fr;
+	nav.navBar .navbar-item.item6 #myButton{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items:center;
 		justify-content: center;
 	}
 
-	nav div:nth-child(1){
-		grid-area:1/2/2/3;
-		justify-content: start;
-	}
 
-	nav div:nth-child(2){
-		grid-area:1/3/2/4;
-		justify-content: start;
-	}
 
-	nav div:nth-child(4){
-		display: none;
-	}
-
-	nav div:nth-child(5){
-		display: none;
-	}
-
-	nav >div:nth-child(6){
-		grid-area:1/4/2/6;
-		display: grid;
-		grid-template-columns:repeat(7,1fr);
-		grid-template-rows:1fr;
-		justify-content: end;
-	}
-
-	nav >div:nth-child(6) #myButton{
-		grid-area:1/7/2/8;
-		padding-top: 10px;
-	}
-
-	#myButton > .menuButton{
-	  	width: 28px;
+	#myButton>.bar1, .bar2, .bar3 {
+	    width: 30px;
 	    height: 1.5px;
+	    margin-top: 7.5px;
 	    background-color: black;
-	    margin-top:5px;
-	    margin-right: 8px;
+	    transition: 0.4s;
+	}
+
+	.change .bar1 {
+	    -webkit-transform: rotate(-45deg) translate(-6px, 6px) ;
+	    transform: rotate(-45deg) translate(-6px, 6px) ;
+	}
+
+	.change .bar2 {
+		opacity: 0;
+	}
+
+	.change .bar3 {
+	    -webkit-transform: rotate(45deg) translate(-7px, -7px) ;
+	    transform: rotate(45deg) translate(-7px, -7px) ;
 	}
 }
-
-
