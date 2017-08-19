@@ -2,6 +2,10 @@
 	box-sizing: border-box;
 }
 
+#main-Container{
+	display: none;
+}
+
 #main-Container, header{
 	width: 100%;
 	height: 100%;
@@ -47,6 +51,10 @@ nav.navBar .navbar-item.item3>div>img{
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
+
+
+
+
 @media all and (max-width: 1024px){
 	nav.navBar{
 		width: 90%;
@@ -68,8 +76,12 @@ nav.navBar .navbar-item.item3>div>img{
 	nav.navBar .navbar-item.item3> div{
 		width: 100%;
 	    height: 50px;
+	    display: flex;
 	}
 
+	nav.navBar .navbar-item.item3> div>img{
+		justify-content: flex-start;
+	}
 
 	.item1{
 		order:1;
@@ -99,6 +111,7 @@ nav.navBar .navbar-item.item3>div>img{
 		padding-top: 5px;
 		display: flex;
 		position: relative;
+		transition: all 0.5s;
 	}
 
 	nav.navBar .navbar-item.item3{
@@ -127,8 +140,6 @@ nav.navBar .navbar-item.item3>div>img{
 		justify-content: center;
 	}
 
-
-
 	#myButton>.bar1, .bar2, .bar3 {
 	    width: 30px;
 	    height: 1.5px;
@@ -150,4 +161,49 @@ nav.navBar .navbar-item.item3>div>img{
 	    -webkit-transform: rotate(45deg) translate(-7px, -7px) ;
 	    transform: rotate(45deg) translate(-7px, -7px) ;
 	}
+
+	@keyframes slideinDown {
+	    from {
+		    transform: translate3d(0, -100%, 0);
+		    visibility: visible;
+		    margin-top:0px;
+	  	}
+	    to {
+	    	transform: translate3d(0, 0, 0);
+	    	margin-top: 200px;
+	    }
+	}
+
+	#responsive-Menu{
+		display: flex;
+		width: 100%;
+		height: 70px;
+		background: #bcebfb;
+		position: absolute;
+		top:-70px;
+		margin:0;
+		transition: all 0.5s;
+	}
+
+	.slideDown {
+	    animation-name: slideinDown;
+	}
+
+	.extend{
+		transform: translate(0,70px);
+	}
+
+	.toTop{
+		top:;
+	}
+
+	#responsive-Menu .navbar-item{
+		display: flex;
+		padding-top: 4px;
+		align-items: center;
+		justify-content: center;
+		flex-grow: 1;
+		flex-direction: column;
+	}
+
 }
