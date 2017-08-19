@@ -1,4 +1,5 @@
 $(function(){
+/// Hàm đôi layout navbar khi xuống dưới 1024px ///
 	function check1024(){
 		if(window.matchMedia("(max-width:1024px)").matches){
 			$(".item5").html('<i class="material-icons">contact_mail</i>');
@@ -16,12 +17,13 @@ $(function(){
 		
 	}
 
+/// Hàm đổi layout navbar khi xuống dưới 700px ///
 	function check700(){
 		if(window.matchMedia("(max-width:700px)").matches){
 			$(".item1, .item2, .item4, .item5").clone().appendTo("#responsive-Menu");
 			$(".item5").append("<p>Contact</p>");
-			$(".item4").append("<p>Project</p>");
-			$(".item2").append("<p>AboutMe</p>");
+			$(".item4").append("<p>AboutMe</p>");
+			$(".item2").append("<p>Project</p>");
 			$(".item1").append("<p>ThinhBui94</p>");
 			$(".navBar .item1, .navBar .item2, .navBar .item4, .navBar .item5").css("display", "none");
 		} else{
@@ -32,7 +34,7 @@ $(function(){
 	$(window).on('resize', check1024);
 	$(window).on('resize', check700);
 
-
+///--- Hiệu ứng ở modal enter trang ---///
 	$("#enter").mouseenter(function(){
 		$("#enter").addClass("animated tada");
 	});
@@ -48,6 +50,7 @@ $(function(){
 	$("#leave").mouseleave(function(){
 		$("#leave").removeClass("animated shake");
 	});
+///--- Hết modal ---///
 
 	$("#enter").on("click", function(){
 		$(".modal-Enter").addClass("animated bounceOutRight");
@@ -65,6 +68,7 @@ $(function(){
 		window.location = "https://www.google.com";
 	})
 
+/// Ấn nút menu ///
 	$("#myButton").on("click", function(){
 		$("#myButton").toggleClass("change");
 		$("#responsive-Menu").toggleClass("extend");
