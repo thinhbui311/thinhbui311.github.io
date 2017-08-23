@@ -7,7 +7,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="PFLO-CSS/modalcontainer.css">
-		<link rel="stylesheet" type="text/css" href="PFLO-CSS/maincontainer.css">
+		<link rel="stylesheet" type="text/css" href="PFLO-CSS/header.css">
+		<link rel="stylesheet" type="text/css" href="PFLO-CSS/section.css">
+		<link rel="stylesheet" type="text/css" href="PFLO-CSS/footer.css">
 		<link rel="stylesheet" type="text/css" href="PFLO-CSS/animate.min.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<style type="text/css">
@@ -34,21 +36,21 @@
 				<header>
 					<nav class="navBar">
 						<div class="navbar-item item1">
-							<a href="#">ThinhBui94</a>
+							<a class="navbar-item item1">ThinhBui94</a>
 						</div>
 						<div class="navbar-item item2">
-							<a href="#">Projects</a>
+							<a class="carousel-control" href=" #myCarousel" data-slide-to=".carousel-item2">Projects</a>
 						</div>
 						<div class="navbar-item item3">
 							<div>
-								<img src="PFLO-Image/logo.JPG" max-height="100%">								
+								<img src="PFLO-Image/logo.JPG" max-height="100%">
 							</div>
 						</div>
 						<div class="navbar-item item4">
-							<a href="#">AboutMe</a>
+							<a class="carousel-control" href="#myCarousel" data-slide-to=".carousel-item3">AboutMe</a>
 						</div>
 						<div class="navbar-item item5">
-							<a href="#">Contact</a>
+							<a class="carousel-control" href="#myCarousel" data-slide-to=".carousel-item4">Contact</a>
 						</div>
 						<div class="navbar-item item6">
 							<div id="myButton">
@@ -63,10 +65,47 @@
 					</div>
 				</header>
 				<section>
-					
+					<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+						<!-- Dấu chấm indicator -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+							<li data-target="#myCarousel" data-slide-to="3"></li>
+						</ol>
+
+
+						<!-- Slide chinh -->
+						<div class="carousel-inner" >
+							<div class="item active" id="carousel-item1">
+								fjwofowf
+							</div>
+							<div class="item" id="carousel-item2">
+								fffffff
+							</div>
+							<div class="item" id="carousel-item3">
+								errrrrr
+							</div>
+							<div class="item" id="carousel-item4">
+								errrrrr
+							</div>
+						</div>
+
+						<!-- Nút điều khiển -->
+						<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+					      <span class="glyphicon glyphicon-chevron-left"></span>
+					      <span class="sr-only">Previous</span>
+					    </a>
+					    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+					      <span class="glyphicon glyphicon-chevron-right"></span>
+					      <span class="sr-only">Next</span>
+					    </a>
+					</div>
 				</section>
 				<footer>
-					
+					<div>
+						
+					</div>
 				</footer>
 			</div>
 		</div>

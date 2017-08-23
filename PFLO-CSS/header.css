@@ -1,0 +1,207 @@
+*{
+	box-sizing: border-box;
+}
+
+a{
+	color: white;
+}
+
+#main-Container{
+	display: none;
+	background: linear-gradient(to bottom right, rgba(0, 235, 211, 0.50), rgba(240, 77, 255, 0.50)), url("https://farm5.staticflickr.com/4427/36571235591_83d9b50585_k.jpg");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	overflow: hidden;
+}
+
+header{
+	width: 100%;
+	height: 90px;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+
+nav.navBar{
+	width: 60%;
+	height: 90px;
+	padding-top: 10px;
+	margin:auto;
+}
+
+nav.navBar .navbar-item{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin:auto;
+	padding:0;
+	float: left;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color: white;
+}
+
+
+nav.navBar .navbar-item.item3> div{
+	width: 100%;
+    height: 80px;
+}
+
+nav.navBar .navbar-item.item3>div>img{
+	height: 100%;
+	border-radius: 50%;
+	border:2px solid rgba(176, 153, 178, 0.55);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+
+@media all and (max-width: 1024px){
+	nav.navBar{
+		width: 90%;
+		height: 55px;
+		padding-top: 5px;
+		display: flex;
+	}
+
+	nav.navBar .navbar-item{
+		display: flex;
+		justify-content:flex-end;
+	}
+
+	.navbar-item .material-icons{
+		font-size: 35px;
+		color:rgba(7, 33, 40, 0.94);
+	}
+
+	nav.navBar .navbar-item.item3> div{
+		width: 100%;
+	    height: 50px;
+	    display: flex;
+	}
+
+	nav.navBar .navbar-item.item3> div>img{
+		justify-content: flex-start;
+	}
+
+	.item1{
+		order:1;
+	}
+
+	.item2{
+		order:2;
+	}
+
+	.item3{
+		order: -2;
+	}
+
+	.item4{
+		order:2;
+	}
+
+	.item5{
+		order:2;
+	}
+}
+
+@media all and (max-width: 700px){
+	nav.navBar{
+		width: 100%;
+		height: 55px;
+		padding-top: 5px;
+		display: flex;
+		position: relative;
+		transition: all 0.5s;
+	}
+
+	header p{
+		color: black;
+	}
+
+	header .navbar-item:not(:nth-child(5)):hover{
+		background-color: rgba(136, 190, 215, 0.65);
+		transition: all 0.5s;
+	}
+
+	nav.navBar .navbar-item.item3{
+		width: 80px;
+		float: left;
+		margin: 0;
+		padding-left: 10px;
+	}
+
+	nav.navBar .navbar-item.item6{
+		width: 50px;
+		height: 100%;
+		display: flex;
+		position: absolute;
+		right: 5px;
+		top:0;
+		margin:0;
+	}
+
+	nav.navBar .navbar-item.item6 #myButton{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items:center;
+		justify-content: center;
+	}
+
+	#myButton>.bar1, .bar2, .bar3 {
+	    width: 30px;
+	    height: 1.5px;
+	    margin-top: 7.5px;
+	    background-color: black;
+	    transition: 0.4s;
+	}
+
+	.change .bar1 {
+	    -webkit-transform: rotate(-45deg) translate(-6px, 6px) ;
+	    transform: rotate(-45deg) translate(-6px, 6px) ;
+	}
+
+	.change .bar2 {
+		opacity: 0;
+	}
+
+	.change .bar3 {
+	    -webkit-transform: rotate(45deg) translate(-7px, -7px) ;
+	    transform: rotate(45deg) translate(-7px, -7px) ;
+	}
+
+	#responsive-Menu{
+		display: flex;
+		width: 100%;
+		height: 70px;
+		position: absolute;
+		top:-70px;
+		margin:0;
+		transition: all 0.5s;
+		background-color: rgba(0, 0, 0, 0.20);
+	}
+
+	.extend{
+		transform: translate(0,70px);
+	}
+
+	#responsive-Menu .navbar-item{
+		display: flex;
+		padding-top: 4px;
+		align-items: center;
+		justify-content: center;
+		flex-grow: 1;
+		flex-direction: column;
+	}
+
+	
+
+}

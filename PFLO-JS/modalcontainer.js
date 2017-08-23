@@ -1,23 +1,22 @@
 $(function(){
-/// Hàm đôi layout navbar khi xuống dưới 1024px ///
+/// khai báo hàm đôi layout navbar khi xuống dưới 1024px ///
 	function check1024(){
 		if(window.matchMedia("(max-width:1024px)").matches){
-			$(".item5").html('<i class="material-icons">contact_mail</i>');
-			$(".item4").html('<i class="material-icons">face</i>');
-			$(".item2").html('<i class="material-icons">event_note</i>');
-			$(".item1").html('<i class="material-icons">home</i>');
+			$(".item5").html('<a href="#myCarousel" data-slide-to="3"><i class="material-icons">contact_mail</i></a>');
+			$(".item4").html('<a href="#myCarousel" data-slide-to="2"><i class="material-icons">face</i></a>');
+			$(".item2").html('<a href="#myCarousel" data-slide-to="1"><i class="material-icons">event_note</i></a>');
+			$(".item1").html('<a href="#myCarousel" data-slide-to="0"><i class="material-icons">home</i></a>');
 			$("#responsive-Menu .item1, #responsive-Menu .item2, #responsive-Menu .item4, #responsive-Menu .item5").remove();
 			$(".navBar .item1, .navBar .item2, .navBar .item4, .navBar .item5").css("display", "flex");
 		} else{
-			$(".item5").html('Contact');
-			$(".item4").html('AboutMe');
-			$(".item2").html('Project');
-			$(".item1").html('ThinhBui94');
+			$(".item5").html('<a href="#myCarousel" data-slide-to="3">Contact</a>');
+			$(".item4").html('<a href="#myCarousel" data-slide-to="2">AboutMe</a>');
+			$(".item2").html('<a href="#myCarousel" data-slide-to="1">Project</a>');
+			$(".item1").html('<a href="#myCarousel" data-slide-to="0">ThinhBui94</a>');
 		}
-		
 	}
 
-/// Hàm đổi layout navbar khi xuống dưới 700px ///
+/// khai báo hàm đổi layout navbar khi xuống dưới 700px ///
 	function check700(){
 		if(window.matchMedia("(max-width:700px)").matches){
 			$(".item1, .item2, .item4, .item5").clone().appendTo("#responsive-Menu");
@@ -33,6 +32,7 @@ $(function(){
 
 	$(window).on('resize', check1024);
 	$(window).on('resize', check700);
+
 
 ///--- Hiệu ứng ở modal enter trang ---///
 	$("#enter").mouseenter(function(){
@@ -52,12 +52,13 @@ $(function(){
 	});
 ///--- Hết modal ---///
 
+
 	$("#enter").on("click", function(){
 		$(".modal-Enter").addClass("animated bounceOutRight");
 		setTimeout(function(){
 			$("#modal-Container").css("display", "none");
 			$(".modal-Enter").css("display", "none");
-			$("#main-Container").css("display", "block");
+			$("#main-Container").css("display", "flex");
 			$("#main-Container").addClass("animated bounceInLeft");
 		}, 500);
 		check1024();
@@ -68,11 +69,13 @@ $(function(){
 		window.location = "https://www.google.com";
 	})
 
+
 /// Ấn nút menu ///
 	$("#myButton").on("click", function(){
 		$("#myButton").toggleClass("change");
 		$("#responsive-Menu").toggleClass("extend");
 		$("nav.navBar").toggleClass("extend");
+		$("section").toggleClass("extend");
+		$("footer").toggleClass("extend");
 	})
-	
 })
