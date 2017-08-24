@@ -2,10 +2,6 @@
 	box-sizing: border-box;
 }
 
-a{
-	color: white;
-}
-
 #main-Container{
 	display: none;
 	background: linear-gradient(to bottom right, rgba(0, 235, 211, 0.50), rgba(240, 77, 255, 0.50)), url("https://farm5.staticflickr.com/4374/36359103590_e6935c3c7a_k.jpg");
@@ -15,7 +11,7 @@ a{
 	position: absolute;
 	top:0;
 	left: 0;
-	overflow: hidden;
+	overflow: scroll;
 }
 
 header{
@@ -48,10 +44,14 @@ nav.navBar .navbar-item{
 	color: white;
 }
 
-
 nav.navBar .navbar-item.item3> div{
 	width: 100%;
     height: 80px;
+}
+
+header a:hover, header a:active, header a:visited, header a:link{
+	text-decoration: none;
+	color: white;
 }
 
 nav.navBar .navbar-item.item3>div>img{
