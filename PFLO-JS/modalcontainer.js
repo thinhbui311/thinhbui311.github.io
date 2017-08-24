@@ -2,10 +2,10 @@ $(function(){
 /// khai báo hàm đôi layout navbar khi xuống dưới 1024px ///
 	function check1024(){
 		if(window.matchMedia("(max-width:1024px)").matches){
-			$(".item5").html('<a href="#myCarousel" data-slide-to="3"><i class="material-icons">contact_mail</i></a>');
-			$(".item4").html('<a href="#myCarousel" data-slide-to="2"><i class="material-icons">face</i></a>');
-			$(".item2").html('<a href="#myCarousel" data-slide-to="1"><i class="material-icons">event_note</i></a>');
-			$(".item1").html('<a href="#myCarousel" data-slide-to="0"><i class="material-icons">home</i></a>');
+			$(".item5").html('<a href="#myCarousel" data-slide-to="3"><i class="material-icons">contact_mail</i><p>Contact</p></a>');
+			$(".item4").html('<a href="#myCarousel" data-slide-to="2"><i class="material-icons">face</i><p>AboutMe</p></a>');
+			$(".item2").html('<a href="#myCarousel" data-slide-to="1"><i class="material-icons">event_note</i><p>Project</p></a>');
+			$(".item1").html('<a href="#myCarousel" data-slide-to="0"><i class="material-icons">home</i><p>ThinhBui94</p></a>');
 			$("#responsive-Menu .item1, #responsive-Menu .item2, #responsive-Menu .item4, #responsive-Menu .item5").remove();
 			$(".navBar .item1, .navBar .item2, .navBar .item4, .navBar .item5").css("display", "flex");
 		} else{
@@ -19,14 +19,12 @@ $(function(){
 /// khai báo hàm đổi layout navbar khi xuống dưới 700px ///
 	function check700(){
 		if(window.matchMedia("(max-width:700px)").matches){
+			$("#responsive-Menu").css("display", "flex");
 			$(".item1, .item2, .item4, .item5").clone().appendTo("#responsive-Menu");
-			$(".item5").append("<p>Contact</p>");
-			$(".item4").append("<p>AboutMe</p>");
-			$(".item2").append("<p>Project</p>");
-			$(".item1").append("<p>ThinhBui94</p>");
 			$(".navBar .item1, .navBar .item2, .navBar .item4, .navBar .item5").css("display", "none");
 		} else{
 			$(".item1, .item2, .item4, .item5").css("display", "flex");
+			$("#responsive-Menu .item1, #responsive-Menu .item2, #responsive-Menu .item4, #responsive-Menu .item5").remove();
 		}
 	}
 
@@ -76,6 +74,7 @@ $(function(){
 		$("#responsive-Menu").toggleClass("extend");
 		$("nav.navBar").toggleClass("extend");
 		$("section").toggleClass("extend");
+		$("section").toggleClass("minimize");
 		$("footer").toggleClass("extend");
 	})
 })
