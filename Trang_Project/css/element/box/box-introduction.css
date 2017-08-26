@@ -1,0 +1,36 @@
+#introduction .group-introduction {
+    padding: 30px;
+
+}
+#introduction .group-introduction .box-introduction{
+    padding:15px;
+    z-index: 50;
+    margin:auto;
+}
+#introduction .group-introduction .box-introduction .icon {
+    width: 120px;
+    height: 120px;
+    padding: 30px 10px 0px 10px;
+    margin: 0 auto;
+}
+#introduction .group-introduction .box-introduction .content {
+    text-align: center;
+    color: white;
+    font-size: 11px;
+    padding:10px;
+}
+#introduction .group-introduction .box-introduction .content h3 {
+    text-transform: uppercase;
+    color: #6CC3EE;
+    margin:0px;
+    font-size: 18px;
+}
+
+#introduction .group-introduction .box-introduction > img{
+    z-index: -5;
+    max-height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+}

@@ -1,0 +1,29 @@
+#header-banner .heading {
+    margin-top: 250px ;
+}
+
+#luxury_slide{
+    z-index: -1;
+
+}
+
+#luxury_slide .item img{
+    width: 100%;
+    height: 500px;
+}
+
+#luxury_baner_bottom{
+    margin-top: -500px;
+    margin-bottom: 100px;
+}
+
+/*text*/
+#header-banner .top {
+    min-height: 0px;
+}
+
+/*chung*/
+#header-banner {
+    background-image: none;
+    padding-bottom: 0px;
+}
