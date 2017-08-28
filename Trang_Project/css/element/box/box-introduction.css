@@ -16,14 +16,14 @@
 #introduction .group-introduction .box-introduction .content {
     text-align: center;
     color: white;
-    font-size: 10px;
+    font-size: 11px;
     padding:10px;
 }
 #introduction .group-introduction .box-introduction .content h3 {
     text-transform: uppercase;
-    color: #dba400;
+    color: #6CC3EE;
     margin:0px;
-    font-size: 19px;
+    font-size: 18px;
 }
 
 #introduction .group-introduction .box-introduction > img{

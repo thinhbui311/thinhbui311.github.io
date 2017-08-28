@@ -3,6 +3,7 @@
     padding: 20px;
     background-repeat:no-repeat;
     background-size: cover;
+    background-color: rgba(162, 155, 134, 0.62);
 }
 #procedure h2 {
     font-size: 32px;
