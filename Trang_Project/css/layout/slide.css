@@ -26,4 +26,22 @@
 #header-banner {
     background-image: none;
     padding-bottom: 0px;
+    position: relative;
 }
+
+#header-banner #offerImage{
+	position: absolute;
+	top:0;
+	right: 0;
+	width: 30%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+#header-banner #offerImage img{
+	-webkit-filter: drop-shadow(5px 10px 5px #222);
+	-moz-filter:drop-shadow(5px 10px 5px #222);
+    filter: drop-shadow(5px 10px 5px #222);
+}
+

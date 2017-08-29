@@ -141,6 +141,28 @@
 #tour_include{
     background-color: #a91717;
     text-align: center;
+    position: relative;
+    z-index: 5;
+}
+
+#tour_include #image-Hightlight1{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    height: 60%;
+    width: 20%;
+    z-index: -5;
+    opacity: 0.7;ư
+}
+
+#tour_include #image-Hightlight2{
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 100%;
+    width: 20%;
+    z-index: -5;
+    opacity: 0.7;
 }
 
 #tour_include h2{
@@ -166,6 +188,7 @@
     padding: 60px 0;
     padding-top: 90px;
     background: url(../../../img/page2/7.specialoffer/tour_escape_hot_time_to_vietna.png);
+    background-size: cover;
 
 }
 
