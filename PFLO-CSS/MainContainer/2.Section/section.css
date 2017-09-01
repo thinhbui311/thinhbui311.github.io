@@ -1,0 +1,379 @@
+section{
+	height: 80%;
+	width: 100%;
+	position: relative;
+	top:100px;
+	transition: all 0.5s;
+}
+
+#myCarousel{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#myCarousel ol.carousel-indicators{
+	opacity: 0.5;
+}
+
+div.carousel-inner{
+	width: 82%;
+	height: 100%;
+	margin: auto;
+}
+
+div.carousel-inner div.item{
+	width: 100%;
+	height: 100%;
+}
+
+section div#carousel-item1 div#item1-Text{
+	width: 450px;
+	height: 360px;
+	margin:100px 0 0 150px;
+	position: relative;
+	
+}
+
+#item1-Text > p{
+	margin:0;
+	font-family: 'Muli', sans-serif;
+	font-size: 30px;
+	color: white;
+	letter-spacing: 3px;
+}
+
+#item1-Text > p:nth-child(1){
+	position: absolute;
+	top:10px;
+	left: 20px;
+	animation-name: firsttext;
+	animation-duration: 2s;
+}
+
+@keyframes firsttext{
+	from{transform: translateX(-20px); opacity: 0}
+	to{transform: translateX(0px); opacity: 1}
+}
+
+#item1-Text > p:nth-child(2){
+	position: absolute;
+	top:60px;
+	left: 70px;
+	animation-name: secondtext;
+	animation-duration: 3s;
+	padding:0 5px;
+}
+
+@keyframes secondtext{
+	0%, 60%{transform: translateX(-70px); opacity: 0}
+	100%{transform: translateX(0px); opacity: 1}
+}
+
+#item1-Text > p:nth-child(3){
+	position: absolute;
+	top:110px;
+	left: 70px;
+	animation-name: thirdtext;
+	animation-duration: 5s;
+	background-color: rgba(38, 34, 34, 0.58);
+	padding:0 5px;
+}
+
+@keyframes thirdtext{
+	0%, 60%{transform: translateX(-70px); opacity: 0}
+	100%{transform: translateX(0px); opacity: 1}
+}
+
+#item1-Text > p:nth-child(4){
+	position: absolute;
+	top:160px;
+	left: 150px;
+	animation-name: fourthtext;
+	animation-duration: 7s;
+}
+
+@keyframes fourthtext{
+	0%, 60%{transform: translateX(-150px); opacity: 0}
+	100%{transform: translateX(0px); opacity: 1}
+}
+
+#item1-Text > p:nth-child(5){
+	position: absolute;
+	top:160px;
+	left: 350px;
+	animation-name: fifthtext;
+	animation-duration: 9.5s;
+	background-color: rgba(38, 34, 34, 0.58);
+	padding:0 5px;
+}
+
+@keyframes fifthtext{
+	0%, 60%{transform: translateX(-230px); opacity: 0}
+	100%{transform: translateX(0px); opacity: 1}
+}
+
+#item1-Text > p:nth-child(6){
+	position: absolute;
+	top:220px;
+	left: 230px;
+	animation-name: sixthtext;
+	animation-duration: 14s;
+	background-color: rgba(38, 34, 34, 0.58);
+	padding:0 5px;
+}
+
+@keyframes sixthtext{
+	0%, 60%{transform: translateX(-230px); opacity: 0}
+	90%{transform: translateX(0px); opacity: 1}
+	93%{opacity: 0}
+	96%{opacity: 1}
+	98%{opacity: 0}
+	100%{opacity: 1}
+}
+
+div#item1-Text > div#mouseScroll{
+	width: 100%;
+	height: 80px;
+	position: absolute;
+	bottom:0;
+	animation-name: scrollMouse;
+	animation-duration: 14s;
+}
+
+@keyframes scrollMouse{
+	0%, 90%{transform: translateY(30px); opacity: 0}
+	100%{transform: translateY(0px); opacity: 1}
+}
+
+div#item1-Text > div > p{
+	position: absolute;
+	top:30px;
+	left: 50px;
+	font-size: 15px;
+}
+
+
+section div#carousel-item1 div#item1-Text div.mouse{
+	position: absolute;
+    width: 22px;
+    height: 42px;
+    bottom: 20px;
+    left: 20px;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    -webkit-animation: intro 1s;
+    animation: intro 1s;
+}
+
+.scroll {
+    display: block;
+    width: 3px;
+    height: 3px;
+    margin: 6px auto;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.7);
+    -webkit-animation: finger 1s infinite;
+    animation: finger 1s infinite;
+}
+
+@-webkit-keyframes intro {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(40px);
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes finger {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+@keyframes finger {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
+section .carousel-item1{
+	background: yellow;
+}
+
+section .carousel-item2{
+	background-color: green;
+}
+
+section .carousel-item3{
+	background-color: pink;
+}
+
+section .carousel-item4{
+	background-color: blue;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+    width: 9%;
+    opacity: 0;
+}
+
+.carousel-control.left:hover, .carousel-control.right:hover{
+	opacity: 0.3;
+	transition: all 0.5s;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+	font-size: 40px;
+}
+
+@media all and (max-width: 700px){
+	section{
+		height: 90%;
+		width: 100%;
+		position: relative;
+		top:60px
+	}
+
+	.minimize{
+		height: 80%;
+		transition: all 0.5s;
+	}
+
+	section div#carousel-item1 div#item1-Text{
+		width: 320px;
+		height: 270px;
+		margin:70px 0 0 0px;
+		position: relative;
+		
+	}
+
+	#item1-Text > p{
+		margin:0;
+		font-family: 'Muli', sans-serif;
+		font-size: 20px;
+		color: white;
+		letter-spacing: 2px;
+	}
+
+	#item1-Text > p:nth-child(1){
+		position: absolute;
+		top:10px;
+		left: 10px;
+		animation-name: firsttext;
+		animation-duration: 2s;
+	}
+
+	@keyframes firsttext{
+		from{transform: translateX(-10px); opacity: 0}
+		to{transform: translateX(0px); opacity: 1}
+	}
+
+	#item1-Text > p:nth-child(2){
+		position: absolute;
+		top:40px;
+		left: 40px;
+		animation-name: secondtext;
+		animation-duration: 3s;
+		padding:0 5px;
+	}
+
+	@keyframes secondtext{
+		0%, 60%{transform: translateX(-40px); opacity: 0}
+		100%{transform: translateX(0px); opacity: 1}
+	}
+
+	#item1-Text > p:nth-child(3){
+		position: absolute;
+		top:70px;
+		left: 40px;
+		animation-name: thirdtext;
+		animation-duration: 5s;
+		background-color: rgba(38, 34, 34, 0.58);
+		padding:0 5px;
+	}
+
+	@keyframes thirdtext{
+		0%, 60%{transform: translateX(-40px); opacity: 0}
+		100%{transform: translateX(0px); opacity: 1}
+	}
+
+	#item1-Text > p:nth-child(4){
+		position: absolute;
+		top:110px;
+		left: 80px;
+		animation-name: fourthtext;
+		animation-duration: 7s;
+	}
+
+	@keyframes fourthtext{
+		0%, 60%{transform: translateX(-80px); opacity: 0}
+		100%{transform: translateX(0px); opacity: 1}
+	}
+
+	#item1-Text > p:nth-child(5){
+		position: absolute;
+		top:110px;
+		left: 220px;
+		animation-name: fifthtext;
+		animation-duration: 9.5s;
+		background-color: rgba(38, 34, 34, 0.58);
+		padding:0 5px;
+	}
+
+	@keyframes fifthtext{
+		0%, 60%{transform: translateX(-220px); opacity: 0}
+		100%{transform: translateX(0px); opacity: 1}
+	}
+
+	#item1-Text > p:nth-child(6){
+		position: absolute;
+		top:140px;
+		left: 140px;
+		animation-name: sixthtext;
+		animation-duration: 14s;
+		background-color: rgba(38, 34, 34, 0.58);
+		padding:0 5px;
+	}
+
+	@keyframes sixthtext{
+		0%, 60%{transform: translateX(-140px); opacity: 0}
+		90%{transform: translateX(0px); opacity: 1}
+		93%{opacity: 0}
+		96%{opacity: 1}
+		98%{opacity: 0}
+		100%{opacity: 1}
+	}
+
+	div#item1-Text > div {
+		display: none;
+	}
+}
