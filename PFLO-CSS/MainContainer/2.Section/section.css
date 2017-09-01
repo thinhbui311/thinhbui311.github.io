@@ -271,7 +271,7 @@ section .carousel-item4{
 	section div#carousel-item1 div#item1-Text{
 		width: 320px;
 		height: 270px;
-		margin:70px 0 0 0px;
+		margin:30px 0 0 0;
 		position: relative;
 		
 	}
@@ -279,7 +279,7 @@ section .carousel-item4{
 	#item1-Text > p{
 		margin:0;
 		font-family: 'Muli', sans-serif;
-		font-size: 20px;
+		font-size: 23px;
 		color: white;
 		letter-spacing: 2px;
 	}
@@ -293,7 +293,7 @@ section .carousel-item4{
 	}
 
 	@keyframes firsttext{
-		from{transform: translateX(-10px); opacity: 0}
+		from{transform: translateX(-30px); opacity: 0}
 		to{transform: translateX(0px); opacity: 1}
 	}
 
@@ -342,7 +342,7 @@ section .carousel-item4{
 	#item1-Text > p:nth-child(5){
 		position: absolute;
 		top:110px;
-		left: 220px;
+		left: 230px;
 		animation-name: fifthtext;
 		animation-duration: 9.5s;
 		background-color: rgba(38, 34, 34, 0.58);
@@ -350,13 +350,13 @@ section .carousel-item4{
 	}
 
 	@keyframes fifthtext{
-		0%, 60%{transform: translateX(-220px); opacity: 0}
+		0%, 60%{transform: translateX(-230px); opacity: 0}
 		100%{transform: translateX(0px); opacity: 1}
 	}
 
 	#item1-Text > p:nth-child(6){
 		position: absolute;
-		top:140px;
+		top:145px;
 		left: 140px;
 		animation-name: sixthtext;
 		animation-duration: 14s;
