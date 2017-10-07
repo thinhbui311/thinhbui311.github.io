@@ -12,6 +12,8 @@
 		<link rel="stylesheet" type="text/css" href="PFLO-CSS/MainContainer/2.Section/section.css">
 		<link rel="stylesheet" type="text/css" href="PFLO-CSS/MainContainer/3.Footer/footer.css">
 		<link rel="stylesheet" type="text/css" href="PFLO-CSS/animate.min.css">
+		<link rel="stylesheet" type="text/css" href="PFLO-CSS/magicscroll.css">
+		<link rel="stylesheet" type="text/css" href="PFLO-CSS/jquery.flipster.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Muli:300" rel="stylesheet">
 		<style type="text/css">
@@ -95,12 +97,32 @@
 										<p>TO SEE MORE</p>
 									</div>
 								</div>
+								<!-- <div id="item1-Image">
+									<img src="PFLO-Image/img1.jpg" height="100%">
+								</div> -->
 							</div>
 
 							<div class="item" id="carousel-item2">
-								<div class="carousel-Content">
-									
-								</div>
+								
+									<div class="my-flipster">
+									    <ul>
+									    	<li><img src="PFLO-Image/prj1.jpg" class="pr" data-name="1"></li>
+									    	<li><img src="PFLO-Image/prj2.jpg" class="pr" data-name="2"></li>
+									    	<li><img src="PFLO-Image/prj3.jpg" class="pr" data-name="3"></li>
+									    	<li><img src="PFLO-Image/prj4.jpg" class="pr" data-name="4"></li>
+									    	<li><img src="PFLO-Image/prj5.jpg" class="pr" data-name="5"></li>
+									    	<li><img src="PFLO-Image/prj6.jpg" class="pr" data-name="6"></li>
+									    	<li><img src="PFLO-Image/prj7.jpg" class="pr" data-name="6"></li>
+									    	<li><img src="PFLO-Image/prj7.jpg" class="pr" data-name="6"></li>
+									    	<li><img src="PFLO-Image/prj7.jpg" class="pr" data-name="6"></li>
+									    	<li><img src="PFLO-Image/prj7.jpg" class="pr" data-name="6"></li>
+									    	
+									    </ul>
+									</div>
+									<div id="item2-Detail">
+										
+									</div>
+							
 							</div>
 
 							<div class="item" id="carousel-item3">
@@ -140,7 +162,16 @@
 
 		<script src="PFLO-JS/jquery-3.2.1.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="PFLO-JS/magicscroll.js"></script>
+		<script src="PFLO-JS/jquery.flipster.min.js"></script>
 		<script src="PFLO-JS/modalcontainer.js"></script>
 		<script src="PFLO-JS/maincontainer.js"></script>
+		<script>
+		    $('.my-flipster').flipster({
+		    	style: 'carousel',
+			    spacing: -0.2,
+			    start: 0
+		    });
+		</script>
 	</body>
 </html>

@@ -33,7 +33,7 @@ section div#carousel-item1 div#item1-Text{
 	height: 360px;
 	margin:100px 0 0 150px;
 	position: relative;
-	
+	display: inline-block;
 }
 
 #item1-Text > p{
@@ -53,7 +53,7 @@ section div#carousel-item1 div#item1-Text{
 }
 
 @keyframes firsttext{
-	from{transform: translateX(-20px); opacity: 0}
+	from{transform: translateX(-60px); opacity: 0}
 	to{transform: translateX(0px); opacity: 1}
 }
 
@@ -376,4 +376,155 @@ section .carousel-item4{
 	div#item1-Text > div {
 		display: none;
 	}
+}
+
+@media all and (max-width: 330px){
+	section{
+		height: 90%;
+		width: 100%;
+		position: relative;
+		top:60px
+	}
+
+	.minimize{
+		height: 80%;
+		transition: all 0.5s;
+	}
+
+	section div#carousel-item1 div#item1-Text{
+		width: 300px;
+		height: 250px;
+		margin:30px 0 0 0;
+		position: relative;
+		
+	}
+
+	#item1-Text > p{
+		margin:0;
+		font-family: 'Muli', sans-serif;
+		font-size: 20px;
+		color: white;
+		letter-spacing: 2px;
+	}
+
+	#item1-Text > p:nth-child(1){
+		position: absolute;
+		top:10px;
+		left: 10px;
+		animation-name: firsttext;
+		animation-duration: 2s;
+	}
+
+	@keyframes firsttext{
+		from{transform: translateX(-30px); opacity: 0}
+		to{transform: translateX(0px); opacity: 1}
+	}
+
+	#item1-Text > p:nth-child(2){
+		position: absolute;
+		top:40px;
+		left: 40px;
+		animation-name: secondtext;
+		animation-duration: 3s;
+		padding:0 5px;
+	}
+
+	@keyframes secondtext{
+		0%, 60%{transform: translateX(-40px); opacity: 0}
+		100%{transform: translateX(0px); opacity: 1}
+	}
+
+	#item1-Text > p:nth-child(3){
+		position: absolute;
+		top:70px;
+		left: 40px;
+		animation-name: thirdtext;
+		animation-duration: 5s;
+		background-color: rgba(38, 34, 34, 0.58);
+		padding:0 5px;
+	}
+
+	@keyframes thirdtext{
+		0%, 60%{transform: translateX(-40px); opacity: 0}
+		100%{transform: translateX(0px); opacity: 1}
+	}
+
+	#item1-Text > p:nth-child(4){
+		position: absolute;
+		top:110px;
+		left: 80px;
+		animation-name: fourthtext;
+		animation-duration: 7s;
+	}
+
+	@keyframes fourthtext{
+		0%, 60%{transform: translateX(-80px); opacity: 0}
+		100%{transform: translateX(0px); opacity: 1}
+	}
+
+	#item1-Text > p:nth-child(5){
+		position: absolute;
+		top:110px;
+		left: 215px;
+		animation-name: fifthtext;
+		animation-duration: 9.5s;
+		background-color: rgba(38, 34, 34, 0.58);
+		padding:0 5px;
+	}
+
+	@keyframes fifthtext{
+		0%, 60%{transform: translateX(-215px); opacity: 0}
+		100%{transform: translateX(0px); opacity: 1}
+	}
+
+	#item1-Text > p:nth-child(6){
+		position: absolute;
+		top:145px;
+		left: 135px;
+		animation-name: sixthtext;
+		animation-duration: 14s;
+		background-color: rgba(38, 34, 34, 0.58);
+		padding:0 5px;
+	}
+
+	@keyframes sixthtext{
+		0%, 60%{transform: translateX(-135px); opacity: 0}
+		90%{transform: translateX(0px); opacity: 1}
+		93%{opacity: 0}
+		96%{opacity: 1}
+		98%{opacity: 0}
+		100%{opacity: 1}
+	}
+
+	div#item1-Text > div {
+		display: none;
+	}
+}
+
+/*div#item1-Image{
+	display: inline-block;
+	height: 100%;
+	position: absolute;
+	top:0;
+	right: 0;
+}*/
+div#carousel-item2{
+	width: 100%;
+	height: 100%;
+	padding-top: 100px;
+}
+
+
+p.projectDes{
+	text-align: center;
+	font-family: 'Muli', sans-serif;
+	color: white;
+	font-size: 30px;
+}
+
+div#item2-Detail{
+	position: relative;
+	width: 100%;
+	height:50px;
+	padding:20px 0;
 }

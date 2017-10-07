@@ -4,7 +4,7 @@
 
 #main-Container{
 	display: none;
-	background: linear-gradient(to bottom right, rgba(0, 235, 211, 0.50), rgba(240, 77, 255, 0.50)), url("https://farm5.staticflickr.com/4427/36571235591_83d9b50585_k.jpg");
+	background: linear-gradient(to bottom right, rgba(25, 32, 24, 0.55), rgba(71, 144, 139, 0.5)), url("https://farm5.staticflickr.com/4427/36571235591_83d9b50585_k.jpg");
 	background-size: cover;
 }
 
