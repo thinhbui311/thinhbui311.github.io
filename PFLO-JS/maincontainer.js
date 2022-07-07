@@ -5,27 +5,27 @@ $(function(){
 		switch(attName){
 			case "1":
 				console.log(attName);
-				window.location.href = "https://thinhbui94.github.io/QuizjQuery/";
+				window.location.href = "https://thinhbui311.github.io/QuizjQuery/";
 				break;
 			case "2":
 				console.log(attName);
-				window.location.href = "https://thinhbui94.github.io/Table/index.html";
+				window.location.href = "https://thinhbui311.github.io/Table/index.html";
 				break;
 			case "3":
 				console.log(attName);
-				window.location.href = "https://thinhbui94.github.io/MemoryCard3/";
+				window.location.href = "https://thinhbui311.github.io/MemoryCard3/";
 				break;
 			case "4":
 				console.log(attName);
-				window.location.href = "https://thinhbui94.github.io/ValidateForm/index.html";
+				window.location.href = "https://thinhbui311.github.io/ValidateForm/index.html";
 				break;
 			case "5":
 				console.log(attName);
-				window.location.href = "https://thinhbui94.github.io/Calculator/index.html";
+				window.location.href = "https://thinhbui311.github.io/Calculator/index.html";
 				break;
 			case "6":
 				console.log(attName);
-				window.location.href = "https://thinhbui94.github.io/BigProject/index.html";
+				window.location.href = "https://thinhbui311.github.io/BigProject/index.html";
 				break;
 			case "7":
 				console.log(attName);
@@ -56,10 +56,10 @@ $(function(){
 				break;
 			case "6":
 				$("#item2-Detail").append("<p class='animated fadeIn projectDes'>"+desArr[attName1 -1 ]+"</p>");
-				break; 
+				break;
 			case "7":
 				$("#item2-Detail").append("<p class='animated fadeIn projectDes'>"+desArr[attName1 -1 ]+"</p>");
-				break; 
+				break;
 		}
 		$(".projectDes").addClass("flag");
 	}, function(){
