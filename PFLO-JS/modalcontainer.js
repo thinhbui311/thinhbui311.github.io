@@ -5,14 +5,14 @@ $(function(){
 			$(".item5").html('<a href="#myCarousel" data-slide-to="3"><i class="material-icons">contact_mail</i><p>Contact</p></a>');
 			$(".item4").html('<a href="#myCarousel" data-slide-to="2"><i class="material-icons">face</i><p>AboutMe</p></a>');
 			$(".item2").html('<a href="#myCarousel" data-slide-to="1"><i class="material-icons">event_note</i><p>Project</p></a>');
-			$(".item1").html('<a href="#myCarousel" data-slide-to="0"><i class="material-icons">home</i><p>ThinhBui94</p></a>');
+			$(".item1").html('<a href="#myCarousel" data-slide-to="0"><i class="material-icons">home</i><p>ThinhBui</p></a>');
 			$("#responsive-Menu .item1, #responsive-Menu .item2, #responsive-Menu .item4, #responsive-Menu .item5").remove();
 			$(".navBar .item1, .navBar .item2, .navBar .item4, .navBar .item5").css("display", "flex");
 		} else{
 			$(".item5").html('<a href="#myCarousel" data-slide-to="3">Contact</a>');
 			$(".item4").html('<a href="#myCarousel" data-slide-to="2">AboutMe</a>');
 			$(".item2").html('<a href="#myCarousel" data-slide-to="1">Project</a>');
-			$(".item1").html('<a href="#myCarousel" data-slide-to="0">ThinhBui94</a>');
+			$(".item1").html('<a href="#myCarousel" data-slide-to="0">thinhbui311</a>');
 		}
 	}
 
