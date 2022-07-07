@@ -29,7 +29,7 @@ $(function(){
 				break;
 			case "7":
 				console.log(attName);
-				window.location.href = "https://github.com/ThinhBui94/";
+				window.location.href = "https://github.com/thinhbui311/";
 				break;
 		}
 	});
