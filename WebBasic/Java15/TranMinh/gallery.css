@@ -1,0 +1,79 @@
+﻿body {
+	background-color: Gainsboro;
+}
+
+.header {
+	padding-top: 20px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.topbar {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.left {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+}
+
+.right {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.topitem {
+	margin: 20px;
+}
+
+.main {
+	padding-top: 50px;
+	padding-right: 100px;
+	padding-left: 100px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.photo {
+	max-width: 500px;
+	height: auto;
+}
+
+.gallery {
+	column-count: 3;
+	column-gap: 30px;
+}
+
+.gallery .card {
+	margin-bottom: 20px;
+	display: inline-block;
+	width: 100%;
+}
+
+.card:hover {
+	transform: scale(1.1);
+}
+
+.foot {
+	font-size: 11px;
+	padding-top: 200px;
+	padding-left: 200px;
+}
+
+.fs {
+	display: block;
+	margin-left: auto;
+	margin-right:auto;
+	object-fit: contain;
+	width: 1280px;
+}
