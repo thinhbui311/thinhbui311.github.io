@@ -1,0 +1,319 @@
+#container{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-content: stretch;
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    background-color: gainsboro;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav-left{
+    display: flex;
+    flex-direction: row;
+    width: 35vw;
+}
+#nav-left ul{
+    display: flex;
+    flex-direction: row;
+    margin-left: -70px;
+}
+#nav-left li{
+    list-style: none;
+    margin-left: 10%;
+}
+#img-title{
+    height: 70px;
+    width: 100px;
+    border: 1px solid transparent;
+    border-radius: 20%;
+    margin-top: 18%;
+}
+#nav-left a{
+    text-decoration: none;
+    color:black;
+    font-weight: 1000;
+}
+#nav-left li:hover{
+    background-color: darkgray;
+    color:deepskyblue;
+}
+#nav-main ul{
+    display: flex;
+    margin-right: 200px;
+}
+#nav-main li{
+    list-style: none;
+    margin-left: 10%;
+}
+#nav-main li:hover{
+    background-color: darkgrey;
+}
+#nav-main a{
+    text-decoration: none;
+    color:black;
+    font-weight: 1000;
+}
+#nav-right{
+    display: flex;
+    justify-content: end;
+}
+#nav-right a{
+ margin-left: 18px;
+}
+#title-text{
+font-size: 50px;
+font-weight: 1000;
+text-align: left;
+padding-top: 100px;
+box-sizing: border-box;
+}
+#title-text::first-letter{
+    color:red;
+    font-size: 85px;
+}
+#title-text::selection{
+    color:aquamarine;
+    font-size: 65px;
+}
+/* Phần Body */
+#body{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F0FFFF;
+}
+#body-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 65vw;
+}
+.img-football{
+    height: 300px;
+    width: 300px;
+    border:1px solid transparent;
+    border-radius: 15%;
+    background-color: red;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+.img-football:hover{
+    transform: scale(1.1);
+    transition-duration:0.5s;
+}
+.img-in-box{
+    height: 300px;
+    width: 300px;
+    border-radius: 20%;
+}
+.clb{
+    color: lightsalmon;
+    padding-left: 80px;
+}
+/* css Ảnh 1 */
+#img-football-1{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    border: 1px solid transparent;
+    border-radius: 20%;
+    box-sizing: border-box;
+}
+#img-football-1-status{
+    width: 300px;
+    background-color: aliceblue;
+    border: 1px solid transparent;
+    border-radius: 10%;
+    padding-left: 50px;
+    box-sizing: border-box;
+    font-weight: 1000;
+}
+#img-football-1-status:hover{
+    transform: translateY(-60px);
+    transition-duration: 0.5s;
+}
+/* Ảnh 2 */
+#img-football-2{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    border: 1px solid transparent;
+    border-radius: 20%;
+    box-sizing: border-box;
+}
+#img-football-2-status{
+    width: 300px;
+    background-color: aliceblue;
+    border: 1px solid transparent;
+    border-radius: 10%;
+    padding-left: 50px;
+    box-sizing: border-box;
+    font-weight: 1000;
+}
+#img-football-2-status:hover{
+    transform: translateY(-60px);
+    transition-duration: 0.5s;
+}
+
+/* Ảnh 3 */
+#img-football-3{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    border: 1px solid transparent;
+    border-radius: 20%;
+    box-sizing: border-box;
+}
+#img-football-3-status{
+    width: 300px;
+    background-color: aliceblue;
+    border: 1px solid transparent;
+    border-radius: 10%;
+    padding-left: 50px;
+    box-sizing: border-box;
+    font-weight: 1000;
+}
+#img-football-3-status:hover{
+    transform: translateY(-60px);
+    transition-duration: 0.5s;
+}
+
+/* Ảnh 4 */
+#img-football-4{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    border: 1px solid transparent;
+    border-radius: 20%;
+    box-sizing: border-box;
+}
+#img-football-4-status{
+    width: 300px;
+    background-color: aliceblue;
+    border: 1px solid transparent;
+    border-radius: 10%;
+    padding-left: 50px;
+    box-sizing: border-box;
+    font-weight: 1000;
+}
+#img-football-4-status:hover{
+    transform: translateY(-60px);
+    transition-duration: 0.5s;
+}
+/* Ảnh Thứ 5 */
+#img-football-5{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    border: 1px solid transparent;
+    border-radius: 20%;
+    box-sizing: border-box;
+}
+#img-football-5-status{
+    width: 300px;
+    background-color: aliceblue;
+    border: 1px solid transparent;
+    border-radius: 10%;
+    padding-left: 50px;
+    box-sizing: border-box;
+    font-weight: 1000;
+}
+#img-football-5-status:hover{
+    transform: translateY(-60px);
+    transition-duration: 0.5s;
+}
+/* body right */
+#body-right{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+}
+#body-right-1{
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+}
+#body-right-img-1{
+  background-image: url(https://cdn1.tuoitre.vn/zoom/600_315/2022/3/30/2773806336831722395966693497507189218713923n-16486085867221153974763-crop-1648609246149876586814.jpg);
+  background-size: 100% 300px;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 300px;
+}
+#body-right-text-1 li{
+    margin-top: 2%;
+    list-style: none;
+    box-sizing: border-box;
+}
+#body-right-text-1 a:hover{
+    color: black;
+}
+#body-right-text-1 a{
+    text-decoration: none;
+    color:chocolate;
+}
+.icon-in-text{
+    padding-top: 2px;
+}
+#body-right::before{
+    content: ' ';
+    width: 1px;
+    height: 1000px;
+    background-color:black;
+    position: absolute;
+    left: 1300px;
+    top:450px
+}
+#body-right-img-2{
+    background-image: url(https://cdnmedia.webthethao.vn/uploads/2021-03-24/world-cup-2022.jpg);
+    background-size: 100% 300px;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 300px;
+}
+
+/* Phần Cuối Footer */
+#footer{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color:cyan;
+    width: 85%;
+    box-sizing: border-box;
+    margin-left: 10%;
+    height: 380px;
+}
+#footer-1{
+    padding-left: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    margin-right: 30%;
+}
+#footer-1::after{
+    content: ' ';
+    width: 1px;
+    height: 350px;
+    background-color:gainsboro;
+    position: absolute;
+    left: 600px;
+    top:0;
+}
+#footer-2{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width:400px;
+    box-sizing: border-box;
+}
+#footer-img{
+    width: 450px;
+    height: 100px;
+}

@@ -1,0 +1,128 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    display: inline-block;
+    vertical-align: 50px;
+    padding-left: 100px;
+}
+
+.menu p {
+    display: inline-block;
+    vertical-align: 50px;
+    line-height: 54px;
+    padding-right: 150px;
+    padding-top: 20px;
+}
+
+.text {
+    padding-left: 50px;
+}
+
+.choose button {
+    margin-left: 50px;
+    border: 2px ridge blue;
+    background-color: aqua;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 15px;
+}
+
+.photo img {
+    margin: 30px 0px 30px 90px;
+    padding-left: 50px;
+    padding-right: 20px;
+}
+
+.AD {
+    color: yellow;
+    position: absolute;
+    top: 575px;
+    left: 240px;
+    font-size: 25px;
+}
+
+.CL {
+    color: blue;
+    position: absolute;
+    top: 575px;
+    left: 670px;
+    font-size: 25px;
+}
+
+.tx {
+    color: rgb(255, 0, 195);
+    position: absolute;
+    top: 575px;
+    left: 1180px;
+    font-size: 25px;
+}
+
+.couple {
+    color: purple;
+    position: absolute;
+    top: 925px;
+    left: 260px;
+    font-size: 25px;
+}
+
+.cute {
+    color: orange;
+    position: absolute;
+    top: 925px;
+    left: 740px;
+    font-size: 25px;
+}
+
+.um {
+    color: white;
+    position: absolute;
+    top: 925px;
+    left: 1180px;
+    font-size: 25px;
+}
+
+.pv {
+    color: aqua;
+    position: absolute;
+    top: 1300px;
+    left: 235px;
+    font-size: 25px;
+}
+
+.cs {
+    color: black;
+    position: absolute;
+    top: 1300px;
+    left: 730px;
+    font-size: 25px;
+}
+
+.mc {
+    color: rgb(0, 214, 252);
+    position: absolute;
+    top: 1300px;
+    left: 1180px;
+    font-size: 25px;
+}
+
+.photo img:hover {
+    transform: scale(1.15);
+    transition-duration: 2s;
+}
+ 
+.footer {
+    background-color:#ccc;
+    text-align:center;
+    padding-top:25px;
+    padding-bottom: 25px;
+    font-size:18px;
+}
+
+.basic {
+    display: flex; 
+    justify-content: center; 
+    gap: 50px
+}

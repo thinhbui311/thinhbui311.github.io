@@ -1,0 +1,45 @@
+header {
+    height: 104.44px;
+    width: 1250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 2px;
+    margin: auto;
+}
+article {
+    background-color: azure;
+}
+.logo {
+    width: 35%;
+    height: auto;
+}
+.nav {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    font-size: 20px;
+}
+.full_image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+    gap: 20px;
+}
+footer {
+    display:flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: bisque;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+.back_button {
+    position: fixed;
+    top: 35px;
+    left: 45px;
+}
