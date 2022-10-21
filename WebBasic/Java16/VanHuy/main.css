@@ -1,0 +1,261 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.nav{
+    min-height: 40px;
+    background-color: rgb(165, 91, 42);
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}
+.nav > .nav-one{
+    display: block;
+    padding: 16px;
+}
+.nav > .nav-one:hover{
+    background-color:rgb(75, 0, 128);
+}
+.nav-one {
+    color: inherit;
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 20px;
+    letter-spacing: 5px;
+}
+p{
+    font-size: 38px;
+    text-align: center;
+}
+.teacher{
+    margin-top: 50px;
+}
+.book{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.book-foot-one{
+    width: 400px;
+    height: 400px;
+    background-image:url(./hinh-anh-do-an-hinh-anh-mon-an-thuc-an-ngon-dep-viet-nam-the-gioi-1.jpg);
+   position: relative;
+    
+    
+}
+.book-footer-one
+{
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.1);
+    transition: all 0,3s ease-in-out;
+    opacity: 0;
+}
+.book-foot-one:hover .book-footer-one{
+    bottom: 0;
+    opacity: 1;
+}
+h1{
+    text-transform: uppercase;
+}
+.book-foot-two{
+    width: 400px;
+    height: 400px;
+    background-image:url(./hinh-anh-do-an-hinh-anh-mon-an-thuc-an-ngon-dep-viet-nam-the-gioi-2.jpg);
+    background-size: cover;
+    position: relative;
+}
+.book-footer-two{
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.1);
+    transition: all 0,3s ease-in-out;
+    opacity: 0;
+}
+.book-foot-two:hover .book-footer-two{
+    bottom: 0;
+    opacity: 1;
+}
+
+
+.book-foot-three{
+    width: 400px;
+    height: 400px;
+    background-image: url(./hinh-anh-do-an-hinh-anh-mon-an-thuc-an-ngon-dep-viet-nam-the-gioi-3.jpg);
+    position: relative;
+}
+.book-footer-three{
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.1);
+    transition: all 0,3s ease-in-out;
+    opacity: 0;
+}
+.book-foot-three:hover .book-footer-three{
+    bottom: 0;
+    opacity: 1;
+}
+    
+.student{
+    display: flex;
+    margin-top: 36px;
+    justify-content:space-evenly;
+}
+
+
+
+.student-one{
+    width: 400px;
+    height: 400px;
+    background-image:url(./hinh-anh-do-an-hinh-anh-mon-an-thuc-an-ngon-dep-viet-nam-the-gioi-6.jpg);
+    background-size: cover;
+    position: relative;
+}
+.student-one-box{
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.1);
+    transition: all 0,3s ease-in-out;
+    opacity: 0;
+}
+.student-one:hover .student-one-box{
+    bottom: 0;
+    opacity: 1;
+}
+
+.student-two{
+    width: 400px;
+    height: 400px;
+    background-image:url(./hinh-anh-do-an-hinh-anh-mon-an-thuc-an-ngon-dep-viet-nam-the-gioi-5.jpg);
+    position: relative;
+}
+.student-two-box{
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.1);
+    transition: all 0,3s ease-in-out;
+    opacity: 0;
+}
+.student-two:hover .student-two-box{
+    bottom: 0;
+    opacity: 1;
+}
+
+.student-three{
+    width: 400px;
+    height: 400px;
+    background-image: url(./hinh-anh-do-an-hinh-anh-mon-an-thuc-an-ngon-dep-viet-nam-the-gioi-10.jpg);
+    position: relative;
+}
+.student-three-box{
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.1);
+    transition: all 0,3s ease-in-out;
+    opacity: 0;
+}
+.student-three:hover .student-three-box{
+    bottom: 0;
+    opacity: 1;
+}
+.pencials{
+    display: flex;
+    margin-top: 36px;
+    justify-content:space-evenly;
+}
+.pencials-one{
+    width: 400px;
+    height: 400px;
+    background-image: url(./hinh-anh-do-an-hinh-anh-mon-an-thuc-an-ngon-dep-viet-nam-the-gioi-11.jpg);
+    position: relative;
+}
+.pencials-one-box{
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.1);
+    transition: all 0,3s ease-in-out;
+    opacity: 0;
+}
+.pencials-one:hover .pencials-one-box{
+    bottom: 0;
+    opacity: 1;
+}
+.pencials-two{
+    width: 400px;
+    height: 400px;
+    background-image: url(./hinh-anh-do-an-hinh-anh-mon-an-thuc-an-ngon-dep-viet-nam-the-gioi-12.jpg);
+    position: relative;
+}
+.pencials-two-box{
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.1);
+    transition: all 0,3s ease-in-out;
+    opacity: 0;
+}
+.pencials-two:hover .pencials-two-box{
+    bottom: 0;
+    opacity: 1;
+}
+
+.pencials-three{
+    width: 400px;
+    height: 400px;
+    background-image: url(./hinh-anh-do-an-hinh-anh-mon-an-thuc-an-ngon-dep-viet-nam-the-gioi-14.jpg);
+    position: relative;
+}
+.pencials-three-box{
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.1);
+    transition: all 0,3s ease-in-out;
+    opacity: 0;
+}
+.pencials-three:hover .pencials-three-box{
+    bottom: 0;
+    opacity: 1;
+}
+.footer{
+    margin-top: 100px;
+    min-height: 100px;
+    background-color: pink;
+    display: flex;
+    color: rgb(0, 106, 255);
+    justify-content: center;
+}
+.footer > .footer-one{
+  display: block;
+  padding: 16px;
+
+}
+.footer-one{
+    color: inherit;
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 20px;
+    letter-spacing: 5px;
+    
+}
+.footer > .footer-one:hover{
+    background-color: rgb(255, 136, 127);
+}
+
+p{
+    font-size: 20px;
+}
+
+
+
+

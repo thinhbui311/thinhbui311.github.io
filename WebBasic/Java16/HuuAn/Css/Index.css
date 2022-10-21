@@ -1,0 +1,223 @@
+body{
+  margin: 0%;
+  background-color: black;
+  color: white;
+  zoom: 90%;
+}
+
+header{
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  top: 0%;
+  z-index: 100;
+  background-color: black;
+  height: 75px;
+}
+@keyframes ftbuttons {
+  from{
+    background-image: radial-gradient(black, black, black);
+  }
+  to{
+    background-image: radial-gradient(black 2%, #cbc1c6 95%, black 3%);
+  }
+}
+button{
+  height: 60px;
+  font-size: 40px;
+  font-weight: 300;
+  border-radius: 10px;
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+}
+button:active{
+  animation: ftbuttons 0.1s ease;
+}
+#icon{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 55px;
+  font-weight: 500;
+}
+#logo{
+  height: 75px;
+  width: 75px;
+}
+#features{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 50px;
+}
+.ftactive{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+}
+.fticons{
+  height: 50px;
+  width: 50px;
+}
+
+article{
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.photos{
+  position: relative;
+  width: 500px;
+  height: 333px;
+  text-align: center;
+}
+#photo1{
+  display: flex;
+  position: relative;
+  width: 500px;
+  height: 333px;
+}
+#photo1:hover .overlay {
+  opacity: 1;
+}
+
+#photo2{
+  display: flex;
+  position: relative;
+  width: 500px;
+  height: 333px;
+}
+#photo2:hover .overlay {
+  opacity: 1;
+}
+
+#photo3{
+  display: flex;
+  position: relative;
+  width: 500px;
+  height: 333px;
+}
+#photo3:hover .overlay {
+  opacity: 1;
+}
+
+#photo4{
+  display: flex;
+  position: relative;
+  width: 500px;
+  height: 333px;
+}
+#photo4:hover .overlay {
+  opacity: 1;
+}
+
+#photo5{
+  display: flex;
+  position: relative;
+  width: 500px;
+  height: 333px;
+}
+#photo5:hover .overlay {
+  opacity: 1;
+}
+
+#photo6{
+  display: flex;
+  position: relative;
+  width: 500px;
+  height: 333px;
+}
+#photo6:hover .overlay {
+  opacity: 1;
+}
+
+#photo7{
+  display: flex;
+  position: relative;
+  width: 500px;
+  height: 333px;
+}
+#photo7:hover .overlay {
+  opacity: 1;
+}
+
+#photo8{
+  display: flex;
+  position: relative;
+  width: 500px;
+  height: 333px;
+}
+#photo8:hover .overlay {
+  opacity: 1;
+}
+
+#photo9{
+  display: flex;
+  position: relative;
+  width: 500px;
+  height: 333px;
+}
+#photo9:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; 
+  text-align: center;
+  width: 500px;
+  height: 333px;
+  margin: 0%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1; 
+  transition: .5s ease;
+  opacity: 0;
+  font-size: 50px;
+}
+a{
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+}
+.name:hover{
+  background-color: white;
+  color: black;
+}
+.download{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 280px;
+  right: 450px;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+  font-size: 40px;
+}
+#end{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid white;
+  width: 600px;
+  height: 100px;
+}

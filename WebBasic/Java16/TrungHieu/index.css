@@ -1,0 +1,100 @@
+ header {
+    width: auto;
+    height: 50px;
+    background-color: rgb(245, 229, 182);
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: 500;
+    justify-content: space-between;
+    padding-top: 20px ;
+    padding-right: 20px;
+    padding-left: 15px;
+
+}
+.right {
+    display: flex;
+    justify-content:flex-end;
+    gap: 50px;
+    align-content: center;
+
+}
+.right .about:hover {
+    color: mediumorchid;
+}
+.right .home:hover {
+    color: mediumorchid;
+}
+.right .services:hover {
+    color: mediumorchid;
+}
+.right .contact:hover {
+    color: mediumorchid;
+}
+body {
+    background-color: rgb(227, 222, 222);
+}
+
+
+.top {
+    width: 400px;
+    height: 100px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 550px;
+    line-height: 30px;
+    
+}
+.line1{
+    text-transform:uppercase;
+    font-weight: 800;
+    font-size: large;
+}
+.line2 {
+    font-weight: 500;
+    font-size: larger;
+}
+.card {
+    width: 400px;
+    padding: 15px;
+
+}
+.image {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    justify-content: space-evenly;
+}
+.card:hover {
+    transform: scale(1.1);
+    transition: all 0.3s linear;
+}
+footer {
+    width: auto;
+    height: auto;
+    background-color: rgb(245, 229, 182);
+    display: block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-content: center;
+}
+.low {
+    display: flex;
+    gap: 50px;
+    margin-left: 500px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    padding-top: 20px;
+
+}
+.copyright {
+    text-align: center;
+    padding-bottom: 15px;
+}
+.low1:hover{
+    text-decoration-line: underline;
+
+}
+
+
+

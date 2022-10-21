@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  background-color: rgb(210, 197, 250);
+}
+
+header {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  background-color:  rgb(210, 197, 250);
+  height: 60px;
+  position: sticky; top: 0%; z-index: 100;
+  border-bottom: 3px ridge whitesmoke;
+}
+#blog {
+  color: rgb(135, 116, 192);
+  font-size: 20px; font-family: cursive;
+  margin-left: 30px; line-height: 30px;
+}
+.icons {
+  height: 30px; width: 30px;
+  color: rgb(135, 116, 192);
+  margin-top: 20px;
+}
+#center_row {
+  display: flex; flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+}
+.searchbar {
+  background-color: rgb(151, 138, 187);
+  color: white; height: 30px; width: 300px;
+  text-align: center; border-radius: 20px;
+  font-size: 20px; margin-top: 30px;
+}
+hr {
+  border: 1px solid white;
+}
+
+
+#info {
+  text-decoration: none;
+  float: right; color:rgb(146, 80, 208);
+  font-size: 20px; font-weight: 200; font-family: cursive;
+  margin-right: 20px; margin-bottom: 20px;
+}
+#info:hover {
+  background-color: rgb(231, 193, 237);
+}
+
+.photo {
+  height: 600px; width: 600px;
+  border: 5px groove rgb(166, 166, 236);
+  margin-top: 20px;  
+}
+.Text {
+  font-size: 20px; font-weight: 400; font-family: cursive;
+  color: rgb(71, 147, 194); text-align: center;
+}
+.Text::selection {
+  background-color: rgb(245, 163, 177);
+}
+#moonlight {
+  height: 600px; width: 600px;
+}
+#childhood {
+  height: 600px; width: 600px;
+}
+#sunday {
+  height: 600px; width: 600px;
+}
+#shinning {
+  height: 600px; width: 600px;
+}
+#winter {
+  height: 600px; width: 600px;
+}
+#love {
+  height: 600px; width: 600px;
+}
+#morning {
+  height: 600px; width: 600px;
+}
+#rain {
+  height: 600px; width: 600px;
+}
+#draw {
+  height: 600px; width: 600px;
+}
+button {
+  color: rgb(101, 114, 169);
+  font-size: 20px; font-weight: 200;
+  font-family: cursive;
+  background-color: rgb(250, 212, 250);
+  border: 2px solid rgb(101, 114, 169);
+  border-radius: 10px; 
+}
+.click {
+  text-decoration: none;
+}
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

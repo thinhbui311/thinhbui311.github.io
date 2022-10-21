@@ -1,0 +1,55 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.test{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header{
+    width: 1200px;
+    height: 50px;
+    background-color: aquamarine;
+    display: flex;
+    position: fixed;
+}
+.header h2{
+    line-height: 50px;
+    padding-left: 20px;
+}
+.header ul {
+    list-style: none;
+    padding-left: 50px;
+    font-size: 20px;
+}
+.header ul li{
+    float: left;
+    padding:0px 10px;
+    line-height: 50px;
+}
+.hotline{
+    font-size: 20px;
+   padding-left: 200px;
+   line-height: 50px;
+}
+.container{
+    width: 1200px;
+    height: 500px;
+}
+.container img{
+    width: 1200px;
+    height: 500px;
+}
+.container p{
+    font-size: 30px;
+}
+.footer{
+    text-align: center;
+    width: 1200px;
+    height: 50px;
+    background-color: lawngreen;
+    margin-top: 140px;
+    line-height: 50px;
+    color: brown;
+}
