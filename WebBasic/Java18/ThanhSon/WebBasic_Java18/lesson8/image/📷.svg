@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 36 36">
+<title>📷: camera (U+1F4F7) - emojiall.com</title>
+<style>svg{stroke:#edf2f6;animation:dashoffset 10s both infinite,fill-opacity 10s both infinite,stroke-opacity 10s both infinite;stroke-dasharray:500%;stroke-dashoffset:500%}@keyframes stroke-opacity{2%,25%{stroke-opacity:.75;stroke-width:2%}100%,75%{stroke-opacity:0;stroke-width:0}}@keyframes fill-opacity{10%,25%{fill-opacity:0}0%,100%,50%{fill-opacity:1}}@keyframes dashoffset{0%,2%{stroke-dashoffset:500%}100%{stroke-dashoffset:0%}}</style>
+<path fill="#66757F" d="M4 5s0-1 1-1h6s1 0 1 1v2H4V5z"/>
+<path fill="#31373D" d="M0 10s0-4 4-4h28s4 0 4 4v18s0 4-4 4H4s-4 0-4-4V10z"/>
+<circle fill="#CCD6DD" cx="21" cy="19" r="10"/>
+<circle fill="#31373D" cx="21" cy="19" r="8"/>
+<circle fill="#3B88C3" cx="21" cy="19" r="5"/>
+<circle fill="#FFF" cx="32.5" cy="9.5" r="1.5"/>
+<path fill="#F5F8FA" d="M12 9.5c0 .829-.671 1.5-1.5 1.5h-5C4.671 11 4 10.329 4 9.5S4.671 8 5.5 8h5c.829 0 1.5.671 1.5 1.5z"/>
+<a xlink:href="https://www.emojiall.com/en/emoji/%F0%9F%93%B7"><text x="36" y="34" font-size="1px" fill="#888da8" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'">📷</text></a>
+<a xlink:href="https://www.emojiall.com/"><text x="36" y="35" font-size="0.8px" fill="#888da8" text-anchor="end"><title>www.emojiall.com</title>emojiall.com</text></a>
+</svg>

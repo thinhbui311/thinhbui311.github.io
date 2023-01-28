@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+.header{
+    text-align: center;
+    padding: 32px;
+}
+.header h1{
+    font-family: 'Sacramento';
+    font-size: 50px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 100px 100px 100px;
+}
+.column{
+    flex: 25%;
+    max-width: 25%;
+}
+.img-hover-zoom{
+    height: auto;
+    overflow: hidden;
+    border: 5px solid white;
+}
+.img-hover-zoom img{
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition:  transform .5s ease;
+}
+.img-hover-zoom:hover img{
+    transform: scale(1.5);
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    justify-content: space-between;
+  }
+
+  .topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+
+  .topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    border: none;
+    font-size: 17px;
+    border: 1px;
+    color: white;
+  }
+
+  .topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+figcaption {
+    background-color: peru;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    background-color: cyan;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.Text {
+    padding-left: 10px;
+}

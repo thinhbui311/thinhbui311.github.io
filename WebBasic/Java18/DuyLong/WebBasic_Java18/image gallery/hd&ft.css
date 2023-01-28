@@ -1,0 +1,31 @@
+.header {
+    display: flexbox;
+    height: 300px;
+    width: 100%;
+    background-image: url("https://208.v4.savills-vx.com/_images/1fdf3aa2-bc42-4905-8790-5111d82271c6-(large)(1)-1248.jpg");
+    text-align: center;
+    color: rgb(216, 235, 240);
+    margin-bottom: 100px;
+}
+.footer {
+    display: flex;
+    gap: 40px;
+    color:rgb(216, 235, 240);
+    background-color: coral;
+    margin-top: 500px;
+    height: 50px;
+    padding-left: 600px;
+    padding-top: 20px;
+}
+.logo {
+    width: 30px;
+    height: 30px;
+}
+#h1 {
+    padding-top: 50px;
+}
+#imgh {
+    height: 30px;
+    width: 30px;
+    padding-top: 20px;
+}

@@ -1,0 +1,45 @@
+.top {
+  display: flex;
+  background-color: gray;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-left {
+  width: 50%;
+}
+.top-right {
+  width: 50%;
+  position: relative;
+  right: 0pxs;
+}
+a {
+  text-decoration: none;
+  padding-left: 10px;
+  color: aliceblue;
+}
+.top-left div p {
+ font-weight: bold;
+}
+.foot {
+  text-align: center;
+  background-color: gray;
+}
+.infor {
+  display: flex;
+}
+.infor div img {
+  width: 70%;
+}
+.infor div ul {
+  font-size: 20px;
+  text-align: left;
+  padding-right: 60px;
+}
+.back {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+button {
+  border-radius: 50%;
+}

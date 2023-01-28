@@ -1,0 +1,58 @@
+.one {
+  background-color: rgba(0, 128, 62, 0.447);
+  width: 150px;
+  padding: 10px;
+  padding-left: 5px;
+}
+.four {
+  background-color: rgba(255, 0, 0, 0.368);
+  width: 150px;
+  padding: 10px;
+  padding-left: 5px;
+}
+.first, .mid {
+  display: inline-block;
+}
+.item-1, .item-2, .item-3, .item-4 {
+  background-color: rgba(0, 162, 255, 0.484);
+  border: 0.1px solid rgba(0, 162, 255, 0.484);
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+}
+.item-1, .item-2, .item-3 {
+  border-bottom-color: rgba(0, 128, 0, 0.872);
+  border-bottom-width: 2px;
+  margin-bottom: 0px;
+}
+.item-2, .item-3, .item-4 {
+ margin-top: 0px;
+}
+.mid {
+  margin-left: 50px;
+}
+.last {
+  background-color: rgba(0, 162, 255, 0.484);
+  width: 135px;
+  height: 195px;
+  display: inline-block;
+  margin-left: 50px;
+}
+.text:nth-child(n) {
+  background-color: blueviolet;
+  width: 30px;
+  height: 30px;
+}
+.text:nth-child(3n+2) {
+  margin-left: 50px;
+}
+.text:nth-child(3n+3) {
+  margin-left: 100px;
+}
+.text:nth-child(3n+1) {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.hard, .five, .item-5 {
+  text-align: center;
+}

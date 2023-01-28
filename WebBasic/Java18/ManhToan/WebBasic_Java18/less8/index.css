@@ -1,0 +1,112 @@
+.header {
+  background-color: rgb(19,25,33);
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 8px;
+}
+.icon, .deiver, .sign-in-top, .orders, .cart {
+  padding: 8px 5px;
+  color: white;
+  text-align: center;
+}
+.icon, .sing-in-top {
+  width: 120px;
+}
+.deliver, .orders, .cart {
+  width: 75px;
+}
+.search {
+  width: 700px;
+  height: 35px;
+}
+.between-above-header {
+  padding: 7px;
+}
+.icon {
+  font-size: 36px;
+  padding: 5px;
+}
+.cart {
+  padding: 10px;
+  font-size: 24px;
+}
+.font-size-12 {
+  font-size: 12px;
+}
+.font-size-16 {
+  font-size: 16px;
+}
+.icon:hover, .deiver:hover, .sign-in-top:hover, .orders:hover, .cart:hover {
+  border: 1px solid white;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(234,237,237);
+  padding: 50px 20px;
+}
+.img-main {
+  width: 250px;
+  height: 300px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  transition-duration: 5s;
+}
+.img-main:hover, .img-main-7:hover {
+  transform: rotate(360deg);
+}
+.img-main-7 {
+  width: 250px;
+  height: 275px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  transition-duration: 5s;
+}
+.name-img, .name-img-7 {
+  font-size: 22px;
+  font-weight: bold;
+}
+.name-img-7 {
+  display: flex;
+  flex-direction: column;
+}
+.main-top-left, .main-top-between, .main-top-right, .main-bot-left, .main-bot-between, 
+.main-bot-right {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.main-top-between, .main-bot-between, .main-top-right, .main-bot-right {
+  margin-left: 15px;
+}
+.main-top-left, .main-bot-left, .main-top-between, .main-bot-between, .main-top-right, 
+.main-bot-right {
+  margin-bottom: 15px;
+}
+.link-img, .footer-bot-right {
+  text-decoration: none;
+  color: rgb(17,122,143);
+}
+.footer {
+  border-top: 1px solid rgb(229,229,229);
+  border-bottom: 1px solid rgb(229,229,229);
+  margin: 20px;
+  padding: 30px 30px;
+  text-align: center;
+}
+.sign-in-bot {
+  font-size: 14px;
+  font-weight: bold;
+  background-color: rgb(255,205,78);
+  border: 1px solid rgb(233,170,14);
+  padding: 5px 9%;
+  display: inline-block;
+  border-radius: 5px;
+  margin: 5px;
+  text-decoration: none;
+  color: black;
+}
+.footer-bot {
+  font-size: 14px;
+}

@@ -1,0 +1,29 @@
+.top {
+  display: flex;
+  background-color: gray;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-left {
+  width: 50%;
+}
+.top-right {
+  width: 50%;
+  position: relative;
+  right: 0pxs;
+}
+a {
+  text-decoration: none;
+  padding-left: 10px;
+  color: aliceblue;
+}
+.top-left div p {
+ font-weight: bold;
+}
+.foot {
+  text-align: center;
+  background-color: gray;
+}
+button {
+  border-radius: 50%;
+}

@@ -1,0 +1,67 @@
+.top {
+  display: flex;
+  background-color: gray;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-left {
+  width: 50%;
+}
+.top-right {
+  width: 50%;
+  position: relative;
+  right: 0pxs;
+}
+a {
+  text-decoration: none;
+  padding-left: 10px;
+  color: aliceblue;
+}
+.top-left div p {
+ font-weight: bold;
+}
+.produce {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-evenly;
+}
+.image {
+  width: 30%;
+  transition: all 1s;
+}
+.image div p {
+  text-align: center;
+  font-weight: bold;
+}
+.see div  img {
+  width: 100%;
+}
+.lake div img {
+  width: 100%;
+  padding-top: 30px;
+}
+.house div img {
+  width: 100%;
+}
+.moutain div img{
+  width: 100%;
+}
+.forest div img {
+  width: 100%;
+}
+.fall div img {
+  width: 100%;
+}
+.foot {
+  text-align: center;
+  background-color: gray;
+}
+div .image:hover {
+  width: 31%;
+  color: brown;
+  transform: scale(5px);
+}
+a:hover {
+  color: brown;
+}

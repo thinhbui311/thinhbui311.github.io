@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: linear-gradient(to right, #DD5E89, #F7BB97);
+}
+
+.flex {
+  display: flex;
+}
+
+header {
+  width: 100%;
+  justify-content: center;
+  background-color: #FFE4E1;
+}
+
+nav {
+  width: 80%;
+}
+
+header nav ul {
+  gap: 60px;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul a {
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 20px;
+  transition: all 0.5s ease-out;
+  color: #6E7B8B;
+}
+
+nav ul a:hover {
+  color: #8B3A3A;
+  scale: 1.2;
+}
+
+article {
+  width: 80%;
+  margin: auto;
+  color: #fff;
+}
+
+article .title {
+  color: #FFFFE0;
+  font-size: 40px;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.content {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.content a {
+  margin: 8px;
+}
+
+.content a img {
+  width: 480px;
+  height: 260px;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.content div a {
+  position: relative;
+  display: block;
+}
+
+.content-title {
+  position: absolute;
+  bottom: 4px;
+  font-size:40px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.content div:hover a img {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0.8;
+}
+
+.content div:hover a .content-title {
+  opacity: 0.8;
+}
+
+.btn-top {
+  position: fixed;
+  padding: 8px;
+  color: green;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  right: 30px;
+  bottom: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-top-title p {
+  display: inline;
+  position: fixed;
+  right: 70px;
+  bottom: 42px;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-top-title:hover .btn-top {
+  transform: translateY(-10px);
+}
+
+.btn-top-title:hover p {
+  opacity: 1;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  color: gray;
+  border-radius: 50%;
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to left, #E55D87, #5FC3E4);
+  gap: 60px;
+}
+
+.contact a p {
+  position: absolute;
+  color: #5FC3E4;
+  font-size: 18px;
+  padding-left: 2px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact a:hover .title-button {
+  opacity: 1;
+}
+
+.contact a:hover .icon {
+  background-color: #6666FF;
+}
